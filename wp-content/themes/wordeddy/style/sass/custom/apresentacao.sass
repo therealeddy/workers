@@ -1,0 +1,150 @@
+.apresentacao
+  display: block
+  width: 100%
+  .area-banner
+    position: relative
+    background: rgba(0,0,0,0.3)
+    .go-next
+      position: absolute
+      z-index: 100
+      left: 50%
+      bottom: 20px
+      font-size: calculateRem(30px)
+      color: $white
+      cursor: pointer
+      animation: jump 1s ease infinite
+    .banner-apresentacao
+      position: relative
+      min-height: 100vh
+      display: block
+      width: 100%
+      background: transparent
+      border: 0px solid
+      video
+        position: absolute
+        right: 0
+        bottom: 0
+        min-width: 100%
+        min-height: 100%
+        z-index: -1
+      h1
+        font-family: 'Poppins', sans-serif
+        font-weight: 300
+        font-size: calculateRem(85px)
+        color: $white
+  .back-blue
+    background: $white
+    &.bottom
+      margin-top: -80px
+    .content
+      width: 100%
+      height: 80px
+      background: $blue
+      &.big
+        height: 160px
+  .video-destaque, .imagem-destaque
+    width: 100%
+    display: block
+  .gallery
+    width: 100%
+    position: relative
+    .slick-arrow
+      position: absolute
+      top: 50%
+      z-index: 100
+      font-size: calculateRem(0px)
+      width: 25px
+      height: 45px
+      background-color: transparent
+      background-position: center
+      background-repeat: no-repeat
+      background-size: contain
+      background-image: url('../../images/arrow-slider.png')
+      border: 0px solid
+      transition: all 0.3s linear
+      &:hover
+        opacity: 0.7
+      &.slick-prev
+        left: 40px
+        transform: rotate(180deg)
+      &.slick-next
+        right: 40px
+    ul.slick-dots
+      list-style-type: none
+      margin: 0
+      padding: 0
+      display: flex
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
+      bottom: 50px
+      li
+        margin: 0
+        padding: 0
+        margin-right: 20px
+        &.slick-active
+          button
+            opacity: 1
+        button
+          margin: 0
+          padding: 0
+          font-size: calculateRem(0px)
+          width: 9px
+          height: 9px
+          background: $white
+          border: 0px solid
+          border-radius: 100px
+          opacity: 0.5
+          transition: all 0.3s linear
+    .item-gallery
+      .back-image-gallery
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        height: 1080px
+        width: 100%
+      video, img
+        width: 100% !important
+  .area-videos
+    width: 100%
+    padding: 100px 0
+    button.item-video
+      width: 100%
+      height: 200px
+      background-size: cover
+      background-repeat: no-repeat
+      background-position: center
+      margin-bottom: 30px
+      display: flex
+      align-items: flex-end
+      padding: 0 0 15px 15px
+      position: relative
+      cursor: pointer
+      transition: all 0.3s linear
+      border: 0px solid
+      outline: none
+      &:hover
+        opacity: 0.8 !important
+      &::before
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        background: $gray
+        z-index: 5
+        opacity: 0.5
+      .content
+        z-index: 10
+        display: flex
+        align-items: center
+        img
+          width: 40px
+          margin-right: 15px
+        p
+          margin: 0
+          font-family: 'Poppins', sans-serif
+          font-weight: 300
+          font-size: calculateRem(18px)
+          color: $white

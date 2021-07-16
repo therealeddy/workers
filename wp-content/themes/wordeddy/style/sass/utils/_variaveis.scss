@@ -1,0 +1,21 @@
+
+$font-size: 16px;
+
+$primary: #7259C1;
+$white: #ffffff;
+$black: #000000;
+$blue: #2c2e3a;
+$gray: #333333;
+$gray-2: #5f5f5f;
+
+@keyframes jump {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

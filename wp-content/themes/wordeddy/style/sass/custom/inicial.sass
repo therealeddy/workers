@@ -1,0 +1,102 @@
+body
+	background-color: $white
+	padding: 0
+	margin: 0
+	width: 100%
+	font-size: $font-size
+	text-rendering: optimizeLegibility !important
+	-webkit-font-smoothing: antialiased !important
+	font-family: 'Poppins', sans-serif
+	overflow-x: hidden
+
+pre
+	display: block
+	padding: 9.5px
+	margin: 0 0 10px
+	font-size: 13px
+	line-height: 1.428571429
+	word-break: break-all
+	word-wrap: break-word
+	color: #000000
+	background-color: #cccccc
+	border: 1px solid #664545
+	border-radius: 4px
+
+
+a, button
+	cursor: pointer !important
+	outline: none !important
+
+.title-2
+	font-family: 'Poppins', sans-serif
+	font-weight: 200
+	font-size: calculateRem(60px)
+	color: $black
+	display: block
+	margin-bottom: 80px
+	&.white
+		color: $white
+
+.title-3
+	font-family: 'Poppins', sans-serif
+	font-weight: 200
+	font-size: calculateRem(40px)
+	color: $black
+	display: block
+	&.white
+		color: $white
+
+.gs_reveal
+	opacity: 0
+	visibility: hidden
+	will-change: transform, opacity
+
+.modal-body-open
+	overflow: hidden
+	padding-right: 15px
+
+.modal-video
+	background: rgba(0,0,0,0.6)
+	.modal-dialog 
+		max-width: 1000px !important
+	.modal-content
+		border: 0px solid
+		border-radius: 0
+		background: transparent
+		height: fit-content
+		.modal-body
+			padding: 0
+			position: relative
+			background: transparent
+			height: fit-content
+			.btn-close-modal
+				position: absolute
+				right: 0
+				top: -40px
+				background: transparent
+				border: 0px solid
+				*
+					color: $white
+					font-size: calculateRem(25px)
+			.close
+				position: absolute
+				right: 15px
+				top: 10px
+				z-index: 100
+			iframe, video
+				width: 100%
+				border: 1px solid transparent
+				height: 565px
+
+.header-black
+	display: block
+	width: 100%
+	height: 130px
+	background: $black
+
+.area-page
+	padding: 100px 0
+	min-height: 100vh
+
+.p-relative
+	position: relative

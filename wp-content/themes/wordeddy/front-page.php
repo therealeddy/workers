@@ -126,7 +126,7 @@
     <div class="container content gs_reveal gs_reveal_fromLeft">
       <img src="<?php the_field('logotipo_secundaria', 'options') ?>" alt="logotipo" class="mb-4 logotipo">
       <h3 class="title-3">
-      <?php the_field('texto_terceira_sessao') ?>
+      <?php the_field('texto_quarta_sessao') ?>
       </h3>
     </div>
   </div>

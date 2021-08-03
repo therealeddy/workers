@@ -19,3 +19,15 @@ $gray-2: #5f5f5f;
     transform: translateY(0px);
   }
 }
+
+@keyframes flare {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

@@ -27,7 +27,7 @@ wp_reset_query(); ?>
 
   <?php if(have_rows('conteudo')): $cont = 1; while ( have_rows('conteudo') ) : the_row(); ?>
     <?php if( get_row_layout() == 'planejamento' ): ?>
-      <div class="planejamento">
+      <div class="planejamento" id="first-session">
         <div class="container p-relative">
           <div class="title-opera gs_reveal gs_reveal_fromTop">
             <p>0<?php echo $cont; ?>.</p>
@@ -37,7 +37,7 @@ wp_reset_query(); ?>
         </div>
       </div>
     <?php $cont++; elseif(get_row_layout() == 'implementacao' ):  ?>
-      <div class="implementacao">
+      <div class="implementacao" id="second-session">
         <div class="container py-5">
           <div class="title-opera py-5 gs_reveal gs_reveal_fromTop">
             <p>0<?php echo $cont; ?>.</p>
@@ -47,7 +47,7 @@ wp_reset_query(); ?>
         <img src="<?php the_sub_field('imagem'); ?>" alt="implementacao" class="gs_reveal gs_reveal_fromLeft">
       </div>
     <?php $cont++; elseif(get_row_layout() == 'operacao' ): ?>
-      <div class="operacao">
+      <div class="operacao" id="third-session">
         <div class="container">
           <div class="title-opera pb-5 mb-5 gs_reveal gs_reveal_fromTop">
             <p>0<?php echo $cont; ?>.</p>

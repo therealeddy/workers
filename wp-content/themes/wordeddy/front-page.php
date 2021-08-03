@@ -104,6 +104,7 @@
 
               <?php if(get_sub_field('arquivo_animado')['type'] === 'video'): ?>
                 <a href="<?php echo get_sub_field('link')['url']; ?>" class="link-video">
+                  <div class="hover-play"></div>
                   <video autoplay muted loop>
                     <source src="<?php echo get_sub_field('arquivo_animado')['url']; ?>" type="video/mp4">
                   </video>
@@ -111,6 +112,7 @@
               <?php endif; ?>
               <?php if(get_sub_field('arquivo_animado')['type'] === 'image'): ?>
                 <a href="<?php echo get_sub_field('link')['url']; ?>">
+                  <div class="hover-play"></div>
                   <div class="img-produto" style="background-image: url(<?php echo get_sub_field('arquivo_animado')['url']; ?>)"></div>
                 </a>
               <?php endif; ?>
@@ -142,17 +144,20 @@
           <?php $cont = 0; while( have_rows('topicos_sexta_sessao') ): the_row(); ?>
             <?php if(get_sub_field('arquivo_animado')['type'] === 'video'): ?>
               <div class="col-lg-4 gs_reveal <?php echo $cont % 2 === 0 ? 'gs_reveal_fromTop' : 'gs_reveal_fromBottom'?>">
-                <div class="img-back video">
+                <a href="<?php echo get_sub_field('link'); ?>" class="img-back video">
+                  <div class="hover-play"></div>
                   <video autoplay muted loop>
                     <source src="<?php echo get_sub_field('arquivo_animado')['url']; ?>" type="video/mp4">
                   </video>
-                </div>
+                </a>
                 <p class="<?php echo $cont === 0 ? 'title-image-left' : 'title-image-right'; ?>"><?php the_sub_field('titulo'); ?></p>
               </div>
             <?php endif; ?>
             <?php if(get_sub_field('arquivo_animado')['type'] === 'image'): ?>
               <div class="col-lg-4 gs_reveal <?php echo $cont % 2 === 0 ? 'gs_reveal_fromTop' : 'gs_reveal_fromBottom'?>">
-                <div class="img-back" style="background-image: url(<?php echo get_sub_field('arquivo_animado')['url']; ?>)"></div>
+                <a href="<?php echo get_sub_field('link'); ?>" class="img-back" style="background-image: url(<?php echo get_sub_field('arquivo_animado')['url']; ?>)">
+                  <div class="hover-play"></div>
+                </a>
                 <p class="<?php echo $cont === 0 ? 'title-image-left' : 'title-image-right'; ?>"><?php the_sub_field('titulo'); ?></p>
               </div>
             <?php endif; ?>

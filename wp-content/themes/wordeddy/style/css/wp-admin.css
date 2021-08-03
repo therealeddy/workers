@@ -9,6 +9,17 @@
     transform: translateY(0px);
   }
 }
+@keyframes flare {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 body {
   background-color: #ffffff !important;
   position: relative;

@@ -18,11 +18,12 @@
       background: transparent
       border: 0px solid
       box-shadow: 50vw 0 200px 0 rgb(0 0 0 / 50%) inset
-      cursor: alias
+      cursor: url(../../images/btn-play-white.png), auto !important
       video
         position: absolute
-        right: 0
+        left: 50%
         bottom: 0
+        transform: translateX(-50%)
         min-width: 100%
         min-height: 100%
         z-index: -1
@@ -91,7 +92,7 @@
         h3
           font-family: 'Poppins', sans-serif
           font-weight: normal
-          font-size: calculateRem(12px)
+          font-size: calculateRem(16px)
           color: $white
         p
           color: $gray-2
@@ -103,14 +104,36 @@
         text-decoration: none
         transition: all .3s linear
         display: block
+        .hover-play
+          opacity: 0
+          transition: all .3s linear
+          position: absolute
+          left: 0
+          top: 0
+          width: 100%
+          height: 100%
+          display: flex
+          align-items: center
+          justify-content: center
+          background: rgba(0, 0, 0, 0.5)
+          z-index: 1000
+          &::before
+            content: ''
+            width: 60px
+            height: 60px
+            background-position: center
+            background-repeat: no-repeat
+            background-size: contain
+            background-image: url('../../images/btn-play.png')
         &:hover
-          opacity: 0.8
+          .hover-play
+            opacity: 1
         &.link-video
           overflow: hidden
           height: 340px
           position: relative
           video
-            height: 100%
+            width: 100%
             transform: translateX(-50%)
             position: absolute
             left: 50%
@@ -143,11 +166,36 @@
       background-position: center
       background-size: cover
       margin-bottom: 30px
+      position: relative
+      display: block
+      .hover-play
+        opacity: 0
+        transition: all .3s linear
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        background: rgba(0, 0, 0, 0.5)
+        z-index: 1000
+        &::before
+          content: ''
+          width: 60px
+          height: 60px
+          background-position: center
+          background-repeat: no-repeat
+          background-size: contain
+          background-image: url('../../images/btn-play.png')
+      &:hover
+        .hover-play
+          opacity: 1
       &.video
         overflow: hidden
         video
-          height: 100%
-          transform: translateX(-25%)
+          width: 100%
     p
       font-family: 'Poppins', sans-serif
       font-size: calculateRem(30px)

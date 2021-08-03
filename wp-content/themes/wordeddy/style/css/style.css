@@ -10,6 +10,17 @@
     transform: translateY(0px);
   }
 }
+@keyframes flare {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 body {
   background-color: #ffffff;
   padding: 0;
@@ -282,12 +293,13 @@ a, button {
   background: transparent;
   border: 0px solid;
   box-shadow: 50vw 0 200px 0 rgba(0, 0, 0, 0.5) inset;
-  cursor: alias;
+  cursor: url(../../images/btn-play-white.png), auto !important;
 }
 .front-page .area-banner .banner-home video {
   position: absolute;
-  right: 0;
+  left: 50%;
   bottom: 0;
+  transform: translateX(-50%);
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
@@ -369,7 +381,7 @@ a, button {
 .front-page .integrar .produtos .title-item h3 {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: #ffffff;
 }
 .front-page .integrar .produtos .title-item p {
@@ -384,8 +396,31 @@ a, button {
   transition: all 0.3s linear;
   display: block;
 }
-.front-page .integrar .produtos a:hover {
-  opacity: 0.8;
+.front-page .integrar .produtos a .hover-play {
+  opacity: 0;
+  transition: all 0.3s linear;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.front-page .integrar .produtos a .hover-play::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../../images/btn-play.png");
+}
+.front-page .integrar .produtos a:hover .hover-play {
+  opacity: 1;
 }
 .front-page .integrar .produtos a.link-video {
   overflow: hidden;
@@ -393,7 +428,7 @@ a, button {
   position: relative;
 }
 .front-page .integrar .produtos a.link-video video {
-  height: 100%;
+  width: 100%;
   transform: translateX(-50%);
   position: absolute;
   left: 50%;
@@ -433,13 +468,40 @@ a, button {
   background-position: center;
   background-size: cover;
   margin-bottom: 30px;
+  position: relative;
+  display: block;
+}
+.front-page .session-five .img-back .hover-play {
+  opacity: 0;
+  transition: all 0.3s linear;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.front-page .session-five .img-back .hover-play::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../../images/btn-play.png");
+}
+.front-page .session-five .img-back:hover .hover-play {
+  opacity: 1;
 }
 .front-page .session-five .img-back.video {
   overflow: hidden;
 }
 .front-page .session-five .img-back.video video {
-  height: 100%;
-  transform: translateX(-25%);
+  width: 100%;
 }
 .front-page .session-five p {
   font-family: "Poppins", sans-serif;
@@ -472,11 +534,13 @@ a, button {
   width: 100%;
   background: transparent;
   border: 0px solid;
+  cursor: url(../../images/btn-play-white.png), auto !important;
 }
 .apresentacao .area-banner .banner-apresentacao video {
   position: absolute;
-  right: 0;
+  left: 50%;
   bottom: 0;
+  transform: translateX(-50%);
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
@@ -523,6 +587,7 @@ a, button {
   background-image: url("../../images/arrow-slider.png");
   border: 0px solid;
   transition: all 0.3s linear;
+  animation: flare 1s ease infinite;
 }
 .apresentacao .gallery .slick-arrow:hover {
   opacity: 0.7;

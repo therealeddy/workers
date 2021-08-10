@@ -1,5 +1,5 @@
 <h1 align="center">
-  🚀 Lebook Front-End 🚀
+  🚀 Workers 🚀
 </h1>
 
 <br>

@@ -728,15 +728,27 @@ a, button {
   padding-left: 10px;
 }
 .empresa .planejamento {
-  background-color: #1a1b21;
+  background-color: #202028;
+  height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
-.empresa .planejamento .title-opera {
+.empresa .planejamento .container-title {
   position: absolute;
-  left: 0;
+  left: 50%;
   top: 100px;
-}
-.empresa .planejamento img {
   width: 100%;
+  transform: translateX(-50%);
+}
+.empresa .planejamento video.video-planejamento {
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .empresa .planejamento video.video-planejamento {
+    width: 1400px;
+  }
 }
 .empresa .implementacao {
   background-color: #2c2e3a;

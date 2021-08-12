@@ -28,13 +28,15 @@ wp_reset_query(); ?>
   <?php if(have_rows('conteudo')): $cont = 1; while ( have_rows('conteudo') ) : the_row(); ?>
     <?php if( get_row_layout() == 'planejamento' ): ?>
       <div class="planejamento" id="first-session">
-        <div class="container p-relative">
+        <div class="container container-title">
           <div class="title-opera gs_reveal gs_reveal_fromTop">
             <p>0<?php echo $cont; ?>.</p>
             <h3><?php the_sub_field('titulo'); ?></h3>
           </div>
-          <img src="<?php the_sub_field('imagem'); ?>" alt="planejamento" class="gs_reveal gs_reveal_fromBottom">
         </div>
+        <video autoplay muted loop class="video-planejamento">
+          <source src="<?php echo get_sub_field('video'); ?>" type="video/mp4">
+        </video>
       </div>
     <?php $cont++; elseif(get_row_layout() == 'implementacao' ):  ?>
       <div class="implementacao" id="second-session">

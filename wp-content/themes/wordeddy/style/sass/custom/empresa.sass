@@ -34,13 +34,22 @@
       color: $white
       padding-left: 10px
   .planejamento
-    background-color: #1a1b21
-    .title-opera
+    background-color: #202028
+    height: 900px
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    .container-title
       position: absolute
-      left: 0
+      left: 50%
       top: 100px
-    img
       width: 100%
+      transform: translateX(-50%)
+    video.video-planejamento
+      width: 100%
+      @media(min-width: 1200px)
+        width: 1400px
   .implementacao
     background-color: #2c2e3a
     img

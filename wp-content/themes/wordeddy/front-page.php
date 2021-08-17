@@ -51,13 +51,16 @@
 
             <?php if(get_sub_field('arquivo_animado')['type'] === 'video'): ?>
               <button type="button" class="img-back video gs_reveal <?php echo $cont === 0 ? 'gs_reveal_fromBottom' : 'gs_reveal_fromTop'?>" data-toggle="modal" data-target="#modal-case-<?php echo $cont ?>">
+                <div class="hover-play"></div>
                 <video autoplay muted loop>
                   <source src="<?php echo get_sub_field('arquivo_animado')['url']; ?>" type="video/mp4">
                 </video>
               </button>
             <?php endif; ?>
             <?php if(get_sub_field('arquivo_animado')['type'] === 'image'): ?>
-              <button type="button" class="img-back gs_reveal <?php echo $cont === 0 ? 'gs_reveal_fromBottom' : 'gs_reveal_fromTop'?>" style="background-image: url(<?php echo get_sub_field('arquivo_animado')['url']; ?>)" data-toggle="modal" data-target="#modal-case-<?php echo $cont ?>"></button>
+              <button type="button" class="img-back gs_reveal <?php echo $cont === 0 ? 'gs_reveal_fromBottom' : 'gs_reveal_fromTop'?>" style="background-image: url(<?php echo get_sub_field('arquivo_animado')['url']; ?>)" data-toggle="modal" data-target="#modal-case-<?php echo $cont ?>">
+                <div class="hover-play"></div>
+              </button>
             <?php endif; ?>
 
             <p class="<?php echo $cont === 0 ? 'title-image-left' : 'title-image-right'; ?>"><?php the_sub_field('titulo'); ?></p>

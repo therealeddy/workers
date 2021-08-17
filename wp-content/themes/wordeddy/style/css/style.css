@@ -347,10 +347,36 @@ a, button {
   background-size: cover;
   border: 0px solid;
   padding: 0;
+  position: relative;
+}
+.front-page .contruir-marcas .area-imagens button.img-back:hover .hover-play {
+  opacity: 1;
+}
+.front-page .contruir-marcas .area-imagens button.img-back .hover-play {
+  opacity: 0;
+  transition: all 0.3s linear;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.front-page .contruir-marcas .area-imagens button.img-back .hover-play::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../../images/btn-play.png");
 }
 .front-page .contruir-marcas .area-imagens button.img-back.video {
   overflow: hidden;
-  position: relative;
 }
 .front-page .contruir-marcas .area-imagens button.img-back.video video {
   height: 100%;
@@ -358,6 +384,7 @@ a, button {
   position: absolute;
   left: 50%;
   bottom: 0;
+  z-index: 500;
 }
 .front-page .integrar {
   min-height: 720px;

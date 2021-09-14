@@ -185,6 +185,14 @@ const slider = () => {
 	});
 }
 
+const loadingWorkers = () => {
+	jQuery('.loading-workers').removeClass('active');
+
+	jQuery('a').click(function() {
+		jQuery('.loading-workers').addClass('active');
+	})
+}
+
 jQuery('document').ready(function(){
 	scrollToTop();
 	// galleryAnimationScroll();
@@ -195,4 +203,5 @@ jQuery('document').ready(function(){
 	menuAction();
 	scrollEase();
 	slider();
+	loadingWorkers();
 });

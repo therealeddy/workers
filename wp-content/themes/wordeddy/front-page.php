@@ -39,15 +39,54 @@
     </div>
   </div>
 
-  <div class="contruir-marcas" id="session-two">
+  <div class="integrar d-flex align-items-center" id="session-two">
+    <div class="container">
+      <h2 class="title-2 white gs_reveal gs_reveal_fromLeft">
+      <?php the_field('titulo_segunda _sessao') ?>
+      </h2>
+    </div>
+    <?php if( have_rows('topicos_segunda_sessao') ): ?>
+      <div class="produtos">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+          <?php $cont = 1; while( have_rows('topicos_segunda_sessao') ): the_row(); ?>
+            <div class="col-lg-4 gs_reveal <?php echo $cont % 2 === 0 ? 'gs_reveal_fromTop' : 'gs_reveal_fromBottom'?>">
+              <div class="title-item">
+                <h3><?php echo get_sub_field('link')['title']; ?></h3>
+                <p>0<?php echo $cont; ?>.</p>
+              </div>
+
+              <?php if(get_sub_field('arquivo_animado')['type'] === 'video'): ?>
+                <a href="<?php echo get_sub_field('link')['url']; ?>" class="link-video">
+                  <div class="hover-play"></div>
+                  <video autoplay muted loop>
+                    <source src="<?php echo get_sub_field('arquivo_animado')['url']; ?>" type="video/mp4">
+                  </video>
+                </a>
+              <?php endif; ?>
+              <?php if(get_sub_field('arquivo_animado')['type'] === 'image'): ?>
+                <a href="<?php echo get_sub_field('link')['url']; ?>">
+                  <div class="hover-play"></div>
+                  <div class="img-produto" style="background-image: url(<?php echo get_sub_field('arquivo_animado')['url']; ?>)"></div>
+                </a>
+              <?php endif; ?>
+            </div>
+            <?php $cont++; endwhile; ?>
+          </div>
+        </div>
+      </div>
+    <?php endif; ?>
+  </div>
+
+  <div class="contruir-marcas">
     <div class="container">
       <h2 class="title-2 gs_reveal gs_reveal_fromLeft">
-        <?php the_field('titulo_contruir'); ?>
+        <?php the_field('titulo_terceira_sessao'); ?>
       </h2>
 
-      <?php if( have_rows('cases_segunda_sessao') ): ?>
+      <?php if( have_rows('cases_terceira_sessao') ): ?>
         <div class="d-flex area-imagens">
-          <?php $cont = 0; while( have_rows('cases_segunda_sessao') ): the_row(); ?>
+          <?php $cont = 0; while( have_rows('cases_terceira_sessao') ): the_row(); ?>
 
             <?php if(get_sub_field('arquivo_animado')['type'] === 'video'): ?>
               <button type="button" class="img-back video gs_reveal <?php echo $cont === 0 ? 'gs_reveal_fromBottom' : 'gs_reveal_fromTop'?>" data-toggle="modal" data-target="#modal-case-<?php echo $cont ?>">
@@ -86,45 +125,6 @@
       <?php $cont++; endwhile; ?>
     <?php endif; ?>
 
-  </div>
-
-  <div class="integrar d-flex align-items-center">
-    <div class="container">
-      <h2 class="title-2 white gs_reveal gs_reveal_fromLeft">
-      <?php the_field('titulo_terceira_sessao') ?>
-      </h2>
-    </div>
-    <?php if( have_rows('topicos__terceira_sessao') ): ?>
-      <div class="produtos">
-        <div class="container">
-          <div class="row d-flex justify-content-center">
-          <?php $cont = 1; while( have_rows('topicos__terceira_sessao') ): the_row(); ?>
-            <div class="col-lg-4 gs_reveal <?php echo $cont % 2 === 0 ? 'gs_reveal_fromTop' : 'gs_reveal_fromBottom'?>">
-              <div class="title-item">
-                <h3><?php echo get_sub_field('link')['title']; ?></h3>
-                <p>0<?php echo $cont; ?>.</p>
-              </div>
-
-              <?php if(get_sub_field('arquivo_animado')['type'] === 'video'): ?>
-                <a href="<?php echo get_sub_field('link')['url']; ?>" class="link-video">
-                  <div class="hover-play"></div>
-                  <video autoplay muted loop>
-                    <source src="<?php echo get_sub_field('arquivo_animado')['url']; ?>" type="video/mp4">
-                  </video>
-                </a>
-              <?php endif; ?>
-              <?php if(get_sub_field('arquivo_animado')['type'] === 'image'): ?>
-                <a href="<?php echo get_sub_field('link')['url']; ?>">
-                  <div class="hover-play"></div>
-                  <div class="img-produto" style="background-image: url(<?php echo get_sub_field('arquivo_animado')['url']; ?>)"></div>
-                </a>
-              <?php endif; ?>
-            </div>
-            <?php $cont++; endwhile; ?>
-          </div>
-        </div>
-      </div>
-    <?php endif; ?>
   </div>
 
   <div class="desvendar d-flex justify-content-center flex-column">

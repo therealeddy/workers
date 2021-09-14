@@ -34,3 +34,8 @@
 
 </head>
 <body <?php body_class(); ?>>
+
+<div class="loading-workers active">
+	<img src="<?php the_field('logotipo', 'options') ?>" alt="logo">
+	<div class="load"></div>
+</div>

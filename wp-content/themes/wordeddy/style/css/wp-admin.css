@@ -20,6 +20,11 @@
     opacity: 0;
   }
 }
+@keyframes spinner3 {
+  to {
+    transform: rotate(360deg);
+  }
+}
 body {
   background-color: #ffffff !important;
   position: relative;

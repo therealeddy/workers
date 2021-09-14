@@ -21,6 +21,11 @@
     opacity: 0;
   }
 }
+@keyframes spinner3 {
+  to {
+    transform: rotate(360deg);
+  }
+}
 body {
   background-color: #ffffff;
   padding: 0;
@@ -141,6 +146,40 @@ a, button {
 
 .p-relative {
   position: relative;
+}
+
+.loading-workers {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: #2c2e3a;
+  z-index: 1000;
+  bottom: 100%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+.loading-workers.active {
+  bottom: 0;
+  opacity: 1;
+}
+.loading-workers img {
+  width: 120px;
+  margin-bottom: 40px;
+}
+.loading-workers .load {
+  height: 40px;
+  width: 40px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  animation: spinner3 800ms ease infinite;
 }
 
 .main-header {
@@ -311,81 +350,6 @@ a, button {
   color: #ffffff;
   text-align: left;
 }
-.front-page .contruir-marcas {
-  min-height: 720px;
-  padding-top: 130px;
-}
-.front-page .contruir-marcas .area-imagens {
-  margin-bottom: -50px;
-  position: relative;
-  z-index: 10;
-}
-.front-page .contruir-marcas .area-imagens .title-image-left, .front-page .contruir-marcas .area-imagens .title-image-right {
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-.front-page .contruir-marcas .area-imagens .title-image-left {
-  position: absolute;
-  left: -105px;
-  top: 100px;
-  z-index: 10;
-  transform: rotate(-90deg);
-}
-.front-page .contruir-marcas .area-imagens .title-image-right {
-  position: absolute;
-  right: -105px;
-  top: 100px;
-  z-index: 10;
-  transform: rotate(90deg);
-}
-.front-page .contruir-marcas .area-imagens button.img-back {
-  width: 50%;
-  height: 650px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border: 0px solid;
-  padding: 0;
-  position: relative;
-}
-.front-page .contruir-marcas .area-imagens button.img-back:hover .hover-play {
-  opacity: 1;
-}
-.front-page .contruir-marcas .area-imagens button.img-back .hover-play {
-  opacity: 0;
-  transition: all 0.3s linear;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 1000;
-}
-.front-page .contruir-marcas .area-imagens button.img-back .hover-play::before {
-  content: "";
-  width: 60px;
-  height: 60px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url("../../images/btn-play.png");
-}
-.front-page .contruir-marcas .area-imagens button.img-back.video {
-  overflow: hidden;
-}
-.front-page .contruir-marcas .area-imagens button.img-back.video video {
-  height: 100%;
-  transform: translateX(-50%);
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  z-index: 500;
-}
 .front-page .integrar {
   min-height: 720px;
   background: #2c2e3a;
@@ -469,14 +433,84 @@ a, button {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.front-page .contruir-marcas {
+  padding-top: 400px;
+}
+.front-page .contruir-marcas .area-imagens {
+  position: relative;
+  z-index: 10;
+}
+.front-page .contruir-marcas .area-imagens .title-image-left, .front-page .contruir-marcas .area-imagens .title-image-right {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.front-page .contruir-marcas .area-imagens .title-image-left {
+  position: absolute;
+  left: -105px;
+  top: 100px;
+  z-index: 10;
+  transform: rotate(-90deg);
+}
+.front-page .contruir-marcas .area-imagens .title-image-right {
+  position: absolute;
+  right: -105px;
+  top: 100px;
+  z-index: 10;
+  transform: rotate(90deg);
+}
+.front-page .contruir-marcas .area-imagens button.img-back {
+  width: 50%;
+  height: 650px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 0px solid;
+  padding: 0;
+  position: relative;
+}
+.front-page .contruir-marcas .area-imagens button.img-back:hover .hover-play {
+  opacity: 1;
+}
+.front-page .contruir-marcas .area-imagens button.img-back .hover-play {
+  opacity: 0;
+  transition: all 0.3s linear;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.front-page .contruir-marcas .area-imagens button.img-back .hover-play::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../../images/btn-play.png");
+}
+.front-page .contruir-marcas .area-imagens button.img-back.video {
+  overflow: hidden;
+}
+.front-page .contruir-marcas .area-imagens button.img-back.video video {
+  height: 100%;
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  z-index: 500;
+}
 .front-page .desvendar {
-  min-height: 720px;
+  padding: 120px 0;
 }
 .front-page .desvendar img.logotipo {
   width: 110px;
-}
-.front-page .desvendar .content {
-  margin-top: 300px;
 }
 .front-page .session-four {
   min-height: 100vh;
@@ -823,6 +857,11 @@ footer .btn-top {
   outline: none;
   color: #ffffff;
   border: 0px solid;
+  text-decoration: none;
+}
+footer .btn-top.back img {
+  margin-right: 0;
+  margin-left: 10px;
 }
 footer .btn-top img {
   width: 20px;

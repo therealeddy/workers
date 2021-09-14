@@ -1,6 +1,12 @@
 <footer>
   <div class="container">
-    <div class="d-flex justify-content-end mb-4">
+    <div class="d-flex <?php echo !is_front_page() ? 'justify-content-between' : 'justify-content-end' ?> mb-4">
+      <?php if(!is_front_page()): ?>
+        <a href="<?php bloginfo('url') ?>" class="btn-top back">
+          Voltar
+          <img src="<?php bloginfo('template_directory'); ?>/images/arrow-back.png" alt="arrow">
+        </a>
+      <?php endif; ?>
       <button type="button" class="btn-top" id="btn-top">
         <img src="<?php bloginfo('template_directory'); ?>/images/arrow.png" alt="arrow">
         Topo
@@ -8,9 +14,9 @@
     </div>
     <div class="d-flex justify-content-between align-items-center mb-5">
       <h4 class="title-2 white mb-0">Let's talk.</h4>
-      <div>
+      <a href="<?php bloginfo('url') ?>">
         <img src="<?php the_field('logotipo', 'options') ?>" alt="logotipo" class="logotipo">
-      </div>
+      </a>
     </div>
     <p class="email"><?php the_field('e-mail', 'options') ?></p>
     <?php if(get_field('whatsapp', 'options')): ?>

@@ -30,19 +30,23 @@ a, button
 .title-2
 	font-family: 'Poppins', sans-serif
 	font-weight: 200
-	font-size: calculateRem(60px)
 	color: $black
 	display: block
 	margin-bottom: 80px
+	font-size: calculateRem(30px)
+	@media(min-width: 992px)
+		font-size: calculateRem(60px)
 	&.white
 		color: $white
 
 .title-3
 	font-family: 'Poppins', sans-serif
 	font-weight: 200
-	font-size: calculateRem(40px)
 	color: $black
 	display: block
+	font-size: calculateRem(25px)
+	@media(min-width: 992px)
+		font-size: calculateRem(40px)
 	&.white
 		color: $white
 
@@ -86,7 +90,10 @@ a, button
 			iframe, video
 				width: 100%
 				border: 1px solid transparent
-				height: 565px
+				height: 265px
+				@media(min-width: 992px)
+					height: 565px
+
 
 .header-black
 	display: block

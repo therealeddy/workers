@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 14-Set-2021 às 20:10
+-- Tempo de geração: 16-Out-2021 às 21:05
 -- Versão do servidor: 8.0.18
 -- versão do PHP: 7.3.11
 
@@ -345,7 +345,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (105, 'widget_archives', 'a:2:{i:2;a:3:{s:5:\"title\";s:0:\"\";s:5:\"count\";i:0;s:8:\"dropdown\";i:0;}s:12:\"_multiwidget\";i:1;}', 'yes'),
 (106, 'widget_meta', 'a:2:{i:2;a:1:{s:5:\"title\";s:0:\"\";}s:12:\"_multiwidget\";i:1;}', 'yes'),
 (107, 'sidebars_widgets', 'a:2:{s:19:\"wp_inactive_widgets\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}s:13:\"array_version\";i:3;}', 'yes'),
-(108, 'cron', 'a:7:{i:1631651775;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1631659346;a:1:{s:32:\"recovery_mode_clean_expired_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1631659347;a:2:{s:18:\"wp_https_detection\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"gravityforms_cron\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1631659374;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1631659377;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1631745746;a:1:{s:30:\"wp_site_health_scheduled_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"weekly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:604800;}}}s:7:\"version\";i:2;}', 'yes'),
+(108, 'cron', 'a:7:{i:1634420175;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1634424146;a:1:{s:32:\"recovery_mode_clean_expired_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1634424147;a:2:{s:18:\"wp_https_detection\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"gravityforms_cron\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1634424174;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1634424177;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1634769746;a:1:{s:30:\"wp_site_health_scheduled_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"weekly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:604800;}}}s:7:\"version\";i:2;}', 'yes'),
 (109, 'widget_pages', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (110, 'widget_calendar', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (111, 'widget_media_audio', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
@@ -418,19 +418,19 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (242, '_options_redes_sociais_3_rede_social', 'field_608dac217c832', 'no'),
 (291, 'nav_menu_options', 'a:2:{i:0;b:0;s:8:\"auto_add\";a:0:{}}', 'yes'),
 (324, 'duplicate_page_options', 'a:4:{s:21:\"duplicate_post_status\";s:5:\"draft\";s:23:\"duplicate_post_redirect\";s:7:\"to_list\";s:21:\"duplicate_post_suffix\";s:0:\"\";s:21:\"duplicate_post_editor\";s:7:\"classic\";}', 'yes'),
-(374, '_site_transient_update_core', 'O:8:\"stdClass\":4:{s:7:\"updates\";a:4:{i:0;O:8:\"stdClass\":10:{s:8:\"response\";s:7:\"upgrade\";s:8:\"download\";s:65:\"https://downloads.wordpress.org/release/pt_BR/wordpress-5.8.1.zip\";s:6:\"locale\";s:5:\"pt_BR\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:65:\"https://downloads.wordpress.org/release/pt_BR/wordpress-5.8.1.zip\";s:10:\"no_content\";s:0:\"\";s:11:\"new_bundled\";s:0:\"\";s:7:\"partial\";s:0:\"\";s:8:\"rollback\";s:0:\"\";}s:7:\"current\";s:5:\"5.8.1\";s:7:\"version\";s:5:\"5.8.1\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.6\";s:15:\"partial_version\";s:0:\"\";}i:1;O:8:\"stdClass\":10:{s:8:\"response\";s:7:\"upgrade\";s:8:\"download\";s:59:\"https://downloads.wordpress.org/release/wordpress-5.8.1.zip\";s:6:\"locale\";s:5:\"en_US\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:59:\"https://downloads.wordpress.org/release/wordpress-5.8.1.zip\";s:10:\"no_content\";s:70:\"https://downloads.wordpress.org/release/wordpress-5.8.1-no-content.zip\";s:11:\"new_bundled\";s:71:\"https://downloads.wordpress.org/release/wordpress-5.8.1-new-bundled.zip\";s:7:\"partial\";s:0:\"\";s:8:\"rollback\";s:0:\"\";}s:7:\"current\";s:5:\"5.8.1\";s:7:\"version\";s:5:\"5.8.1\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.6\";s:15:\"partial_version\";s:0:\"\";}i:2;O:8:\"stdClass\":11:{s:8:\"response\";s:10:\"autoupdate\";s:8:\"download\";s:65:\"https://downloads.wordpress.org/release/pt_BR/wordpress-5.8.1.zip\";s:6:\"locale\";s:5:\"pt_BR\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:65:\"https://downloads.wordpress.org/release/pt_BR/wordpress-5.8.1.zip\";s:10:\"no_content\";s:0:\"\";s:11:\"new_bundled\";s:0:\"\";s:7:\"partial\";s:0:\"\";s:8:\"rollback\";s:0:\"\";}s:7:\"current\";s:5:\"5.8.1\";s:7:\"version\";s:5:\"5.8.1\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.6\";s:15:\"partial_version\";s:0:\"\";s:9:\"new_files\";s:1:\"1\";}i:3;O:8:\"stdClass\":11:{s:8:\"response\";s:10:\"autoupdate\";s:8:\"download\";s:65:\"https://downloads.wordpress.org/release/pt_BR/wordpress-5.7.3.zip\";s:6:\"locale\";s:5:\"pt_BR\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:65:\"https://downloads.wordpress.org/release/pt_BR/wordpress-5.7.3.zip\";s:10:\"no_content\";s:0:\"\";s:11:\"new_bundled\";s:0:\"\";s:7:\"partial\";s:0:\"\";s:8:\"rollback\";s:0:\"\";}s:7:\"current\";s:5:\"5.7.3\";s:7:\"version\";s:5:\"5.7.3\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.6\";s:15:\"partial_version\";s:0:\"\";s:9:\"new_files\";s:1:\"1\";}}s:12:\"last_checked\";i:1631647331;s:15:\"version_checked\";s:5:\"5.7.1\";s:12:\"translations\";a:0:{}}', 'no'),
-(375, '_site_transient_update_themes', 'O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1631650218;s:7:\"checked\";a:1:{s:8:\"wordeddy\";s:1:\"1\";}s:8:\"response\";a:0:{}s:9:\"no_update\";a:0:{}s:12:\"translations\";a:0:{}}', 'no'),
-(387, '_site_transient_update_plugins', 'O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1631650217;s:7:\"checked\";a:4:{s:33:\"classic-editor/classic-editor.php\";s:3:\"1.6\";s:32:\"duplicate-page/duplicatepage.php\";s:3:\"4.4\";s:44:\"stops-core-theme-and-plugin-updates/main.php\";s:5:\"9.0.8\";s:53:\"mousewheel-smooth-scroll/mousewheel-smooth-scroll.php\";s:3:\"5.6\";}s:8:\"response\";a:3:{s:33:\"classic-editor/classic-editor.php\";O:8:\"stdClass\":13:{s:2:\"id\";s:28:\"w.org/plugins/classic-editor\";s:4:\"slug\";s:14:\"classic-editor\";s:6:\"plugin\";s:33:\"classic-editor/classic-editor.php\";s:11:\"new_version\";s:5:\"1.6.2\";s:3:\"url\";s:45:\"https://wordpress.org/plugins/classic-editor/\";s:7:\"package\";s:63:\"https://downloads.wordpress.org/plugin/classic-editor.1.6.2.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:67:\"https://ps.w.org/classic-editor/assets/icon-256x256.png?rev=1998671\";s:2:\"1x\";s:67:\"https://ps.w.org/classic-editor/assets/icon-128x128.png?rev=1998671\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:70:\"https://ps.w.org/classic-editor/assets/banner-1544x500.png?rev=1998671\";s:2:\"1x\";s:69:\"https://ps.w.org/classic-editor/assets/banner-772x250.png?rev=1998676\";}s:11:\"banners_rtl\";a:0:{}s:8:\"requires\";s:3:\"4.9\";s:6:\"tested\";s:5:\"5.8.1\";s:12:\"requires_php\";s:5:\"5.2.4\";s:13:\"compatibility\";O:8:\"stdClass\":0:{}}s:32:\"duplicate-page/duplicatepage.php\";O:8:\"stdClass\":13:{s:2:\"id\";s:28:\"w.org/plugins/duplicate-page\";s:4:\"slug\";s:14:\"duplicate-page\";s:6:\"plugin\";s:32:\"duplicate-page/duplicatepage.php\";s:11:\"new_version\";s:5:\"4.4.3\";s:3:\"url\";s:45:\"https://wordpress.org/plugins/duplicate-page/\";s:7:\"package\";s:57:\"https://downloads.wordpress.org/plugin/duplicate-page.zip\";s:5:\"icons\";a:1:{s:2:\"1x\";s:67:\"https://ps.w.org/duplicate-page/assets/icon-128x128.jpg?rev=1412874\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:69:\"https://ps.w.org/duplicate-page/assets/banner-772x250.jpg?rev=1410328\";}s:11:\"banners_rtl\";a:0:{}s:8:\"requires\";s:3:\"3.4\";s:6:\"tested\";s:5:\"5.8.1\";s:12:\"requires_php\";b:0;s:13:\"compatibility\";O:8:\"stdClass\":0:{}}s:44:\"stops-core-theme-and-plugin-updates/main.php\";O:8:\"stdClass\":13:{s:2:\"id\";s:49:\"w.org/plugins/stops-core-theme-and-plugin-updates\";s:4:\"slug\";s:35:\"stops-core-theme-and-plugin-updates\";s:6:\"plugin\";s:44:\"stops-core-theme-and-plugin-updates/main.php\";s:11:\"new_version\";s:5:\"9.0.9\";s:3:\"url\";s:66:\"https://wordpress.org/plugins/stops-core-theme-and-plugin-updates/\";s:7:\"package\";s:84:\"https://downloads.wordpress.org/plugin/stops-core-theme-and-plugin-updates.9.0.9.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:88:\"https://ps.w.org/stops-core-theme-and-plugin-updates/assets/icon-256x256.png?rev=1896941\";s:2:\"1x\";s:88:\"https://ps.w.org/stops-core-theme-and-plugin-updates/assets/icon-128x128.png?rev=1896941\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:91:\"https://ps.w.org/stops-core-theme-and-plugin-updates/assets/banner-1544x500.png?rev=1925992\";s:2:\"1x\";s:90:\"https://ps.w.org/stops-core-theme-and-plugin-updates/assets/banner-772x250.png?rev=1925992\";}s:11:\"banners_rtl\";a:0:{}s:8:\"requires\";s:3:\"5.1\";s:6:\"tested\";s:5:\"5.8.1\";s:12:\"requires_php\";s:3:\"5.6\";s:13:\"compatibility\";O:8:\"stdClass\":0:{}}}s:12:\"translations\";a:2:{i:0;a:7:{s:4:\"type\";s:6:\"plugin\";s:4:\"slug\";s:14:\"duplicate-page\";s:8:\"language\";s:5:\"pt_BR\";s:7:\"version\";s:3:\"4.4\";s:7:\"updated\";s:19:\"2021-05-18 21:06:59\";s:7:\"package\";s:79:\"https://downloads.wordpress.org/translation/plugin/duplicate-page/4.4/pt_BR.zip\";s:10:\"autoupdate\";b:1;}i:1;a:7:{s:4:\"type\";s:6:\"plugin\";s:4:\"slug\";s:35:\"stops-core-theme-and-plugin-updates\";s:8:\"language\";s:5:\"pt_BR\";s:7:\"version\";s:5:\"9.0.8\";s:7:\"updated\";s:19:\"2017-06-01 16:16:58\";s:7:\"package\";s:102:\"https://downloads.wordpress.org/translation/plugin/stops-core-theme-and-plugin-updates/9.0.8/pt_BR.zip\";s:10:\"autoupdate\";b:1;}}s:9:\"no_update\";a:1:{s:53:\"mousewheel-smooth-scroll/mousewheel-smooth-scroll.php\";O:8:\"stdClass\":10:{s:2:\"id\";s:38:\"w.org/plugins/mousewheel-smooth-scroll\";s:4:\"slug\";s:24:\"mousewheel-smooth-scroll\";s:6:\"plugin\";s:53:\"mousewheel-smooth-scroll/mousewheel-smooth-scroll.php\";s:11:\"new_version\";s:3:\"5.6\";s:3:\"url\";s:55:\"https://wordpress.org/plugins/mousewheel-smooth-scroll/\";s:7:\"package\";s:71:\"https://downloads.wordpress.org/plugin/mousewheel-smooth-scroll.5.6.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:77:\"https://ps.w.org/mousewheel-smooth-scroll/assets/icon-256x256.png?rev=1063217\";s:2:\"1x\";s:77:\"https://ps.w.org/mousewheel-smooth-scroll/assets/icon-128x128.png?rev=1063217\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:79:\"https://ps.w.org/mousewheel-smooth-scroll/assets/banner-772x250.jpg?rev=1063217\";}s:11:\"banners_rtl\";a:0:{}s:8:\"requires\";s:5:\"3.0.1\";}}}', 'no'),
+(374, '_site_transient_update_core', 'O:8:\"stdClass\":4:{s:7:\"updates\";a:4:{i:0;O:8:\"stdClass\":10:{s:8:\"response\";s:7:\"upgrade\";s:8:\"download\";s:65:\"https://downloads.wordpress.org/release/pt_BR/wordpress-5.8.1.zip\";s:6:\"locale\";s:5:\"pt_BR\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:65:\"https://downloads.wordpress.org/release/pt_BR/wordpress-5.8.1.zip\";s:10:\"no_content\";s:0:\"\";s:11:\"new_bundled\";s:0:\"\";s:7:\"partial\";s:0:\"\";s:8:\"rollback\";s:0:\"\";}s:7:\"current\";s:5:\"5.8.1\";s:7:\"version\";s:5:\"5.8.1\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.6\";s:15:\"partial_version\";s:0:\"\";}i:1;O:8:\"stdClass\":10:{s:8:\"response\";s:7:\"upgrade\";s:8:\"download\";s:59:\"https://downloads.wordpress.org/release/wordpress-5.8.1.zip\";s:6:\"locale\";s:5:\"en_US\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:59:\"https://downloads.wordpress.org/release/wordpress-5.8.1.zip\";s:10:\"no_content\";s:70:\"https://downloads.wordpress.org/release/wordpress-5.8.1-no-content.zip\";s:11:\"new_bundled\";s:71:\"https://downloads.wordpress.org/release/wordpress-5.8.1-new-bundled.zip\";s:7:\"partial\";s:0:\"\";s:8:\"rollback\";s:0:\"\";}s:7:\"current\";s:5:\"5.8.1\";s:7:\"version\";s:5:\"5.8.1\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.6\";s:15:\"partial_version\";s:0:\"\";}i:2;O:8:\"stdClass\":11:{s:8:\"response\";s:10:\"autoupdate\";s:8:\"download\";s:65:\"https://downloads.wordpress.org/release/pt_BR/wordpress-5.8.1.zip\";s:6:\"locale\";s:5:\"pt_BR\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:65:\"https://downloads.wordpress.org/release/pt_BR/wordpress-5.8.1.zip\";s:10:\"no_content\";s:0:\"\";s:11:\"new_bundled\";s:0:\"\";s:7:\"partial\";s:0:\"\";s:8:\"rollback\";s:0:\"\";}s:7:\"current\";s:5:\"5.8.1\";s:7:\"version\";s:5:\"5.8.1\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.6\";s:15:\"partial_version\";s:0:\"\";s:9:\"new_files\";s:1:\"1\";}i:3;O:8:\"stdClass\":11:{s:8:\"response\";s:10:\"autoupdate\";s:8:\"download\";s:65:\"https://downloads.wordpress.org/release/pt_BR/wordpress-5.7.3.zip\";s:6:\"locale\";s:5:\"pt_BR\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:65:\"https://downloads.wordpress.org/release/pt_BR/wordpress-5.7.3.zip\";s:10:\"no_content\";s:0:\"\";s:11:\"new_bundled\";s:0:\"\";s:7:\"partial\";s:0:\"\";s:8:\"rollback\";s:0:\"\";}s:7:\"current\";s:5:\"5.7.3\";s:7:\"version\";s:5:\"5.7.3\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.6\";s:15:\"partial_version\";s:0:\"\";s:9:\"new_files\";s:1:\"1\";}}s:12:\"last_checked\";i:1634418173;s:15:\"version_checked\";s:5:\"5.7.1\";s:12:\"translations\";a:0:{}}', 'no'),
+(375, '_site_transient_update_themes', 'O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1634418297;s:7:\"checked\";a:1:{s:8:\"wordeddy\";s:1:\"1\";}s:8:\"response\";a:0:{}s:9:\"no_update\";a:0:{}s:12:\"translations\";a:0:{}}', 'no'),
+(387, '_site_transient_update_plugins', 'O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1634418295;s:7:\"checked\";a:4:{s:33:\"classic-editor/classic-editor.php\";s:3:\"1.6\";s:32:\"duplicate-page/duplicatepage.php\";s:3:\"4.4\";s:44:\"stops-core-theme-and-plugin-updates/main.php\";s:5:\"9.0.8\";s:53:\"mousewheel-smooth-scroll/mousewheel-smooth-scroll.php\";s:3:\"5.6\";}s:8:\"response\";a:4:{s:33:\"classic-editor/classic-editor.php\";O:8:\"stdClass\":13:{s:2:\"id\";s:28:\"w.org/plugins/classic-editor\";s:4:\"slug\";s:14:\"classic-editor\";s:6:\"plugin\";s:33:\"classic-editor/classic-editor.php\";s:11:\"new_version\";s:5:\"1.6.2\";s:3:\"url\";s:45:\"https://wordpress.org/plugins/classic-editor/\";s:7:\"package\";s:63:\"https://downloads.wordpress.org/plugin/classic-editor.1.6.2.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:67:\"https://ps.w.org/classic-editor/assets/icon-256x256.png?rev=1998671\";s:2:\"1x\";s:67:\"https://ps.w.org/classic-editor/assets/icon-128x128.png?rev=1998671\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:70:\"https://ps.w.org/classic-editor/assets/banner-1544x500.png?rev=1998671\";s:2:\"1x\";s:69:\"https://ps.w.org/classic-editor/assets/banner-772x250.png?rev=1998676\";}s:11:\"banners_rtl\";a:0:{}s:8:\"requires\";s:3:\"4.9\";s:6:\"tested\";s:5:\"5.8.1\";s:12:\"requires_php\";s:5:\"5.2.4\";s:13:\"compatibility\";O:8:\"stdClass\":0:{}}s:32:\"duplicate-page/duplicatepage.php\";O:8:\"stdClass\":13:{s:2:\"id\";s:28:\"w.org/plugins/duplicate-page\";s:4:\"slug\";s:14:\"duplicate-page\";s:6:\"plugin\";s:32:\"duplicate-page/duplicatepage.php\";s:11:\"new_version\";s:5:\"4.4.5\";s:3:\"url\";s:45:\"https://wordpress.org/plugins/duplicate-page/\";s:7:\"package\";s:57:\"https://downloads.wordpress.org/plugin/duplicate-page.zip\";s:5:\"icons\";a:1:{s:2:\"1x\";s:67:\"https://ps.w.org/duplicate-page/assets/icon-128x128.jpg?rev=1412874\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:69:\"https://ps.w.org/duplicate-page/assets/banner-772x250.jpg?rev=1410328\";}s:11:\"banners_rtl\";a:0:{}s:8:\"requires\";s:3:\"3.4\";s:6:\"tested\";s:5:\"5.8.1\";s:12:\"requires_php\";b:0;s:13:\"compatibility\";O:8:\"stdClass\":0:{}}s:44:\"stops-core-theme-and-plugin-updates/main.php\";O:8:\"stdClass\":13:{s:2:\"id\";s:49:\"w.org/plugins/stops-core-theme-and-plugin-updates\";s:4:\"slug\";s:35:\"stops-core-theme-and-plugin-updates\";s:6:\"plugin\";s:44:\"stops-core-theme-and-plugin-updates/main.php\";s:11:\"new_version\";s:6:\"9.0.10\";s:3:\"url\";s:66:\"https://wordpress.org/plugins/stops-core-theme-and-plugin-updates/\";s:7:\"package\";s:85:\"https://downloads.wordpress.org/plugin/stops-core-theme-and-plugin-updates.9.0.10.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:88:\"https://ps.w.org/stops-core-theme-and-plugin-updates/assets/icon-256x256.png?rev=1896941\";s:2:\"1x\";s:88:\"https://ps.w.org/stops-core-theme-and-plugin-updates/assets/icon-128x128.png?rev=1896941\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:91:\"https://ps.w.org/stops-core-theme-and-plugin-updates/assets/banner-1544x500.png?rev=1925992\";s:2:\"1x\";s:90:\"https://ps.w.org/stops-core-theme-and-plugin-updates/assets/banner-772x250.png?rev=1925992\";}s:11:\"banners_rtl\";a:0:{}s:8:\"requires\";s:3:\"5.1\";s:6:\"tested\";s:5:\"5.8.1\";s:12:\"requires_php\";s:3:\"5.6\";s:13:\"compatibility\";O:8:\"stdClass\":0:{}}s:53:\"mousewheel-smooth-scroll/mousewheel-smooth-scroll.php\";O:8:\"stdClass\":13:{s:2:\"id\";s:38:\"w.org/plugins/mousewheel-smooth-scroll\";s:4:\"slug\";s:24:\"mousewheel-smooth-scroll\";s:6:\"plugin\";s:53:\"mousewheel-smooth-scroll/mousewheel-smooth-scroll.php\";s:11:\"new_version\";s:3:\"5.7\";s:3:\"url\";s:55:\"https://wordpress.org/plugins/mousewheel-smooth-scroll/\";s:7:\"package\";s:71:\"https://downloads.wordpress.org/plugin/mousewheel-smooth-scroll.5.7.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:77:\"https://ps.w.org/mousewheel-smooth-scroll/assets/icon-256x256.png?rev=1063217\";s:2:\"1x\";s:77:\"https://ps.w.org/mousewheel-smooth-scroll/assets/icon-128x128.png?rev=1063217\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:79:\"https://ps.w.org/mousewheel-smooth-scroll/assets/banner-772x250.jpg?rev=1063217\";}s:11:\"banners_rtl\";a:0:{}s:8:\"requires\";s:5:\"3.0.1\";s:6:\"tested\";s:5:\"5.8.1\";s:12:\"requires_php\";b:0;s:13:\"compatibility\";O:8:\"stdClass\":0:{}}}s:12:\"translations\";a:2:{i:0;a:7:{s:4:\"type\";s:6:\"plugin\";s:4:\"slug\";s:14:\"duplicate-page\";s:8:\"language\";s:5:\"pt_BR\";s:7:\"version\";s:3:\"4.4\";s:7:\"updated\";s:19:\"2021-05-18 21:06:59\";s:7:\"package\";s:79:\"https://downloads.wordpress.org/translation/plugin/duplicate-page/4.4/pt_BR.zip\";s:10:\"autoupdate\";b:1;}i:1;a:7:{s:4:\"type\";s:6:\"plugin\";s:4:\"slug\";s:35:\"stops-core-theme-and-plugin-updates\";s:8:\"language\";s:5:\"pt_BR\";s:7:\"version\";s:5:\"9.0.8\";s:7:\"updated\";s:19:\"2017-06-01 16:16:58\";s:7:\"package\";s:102:\"https://downloads.wordpress.org/translation/plugin/stops-core-theme-and-plugin-updates/9.0.8/pt_BR.zip\";s:10:\"autoupdate\";b:1;}}s:9:\"no_update\";a:0:{}}', 'no'),
 (388, 'MPSUM', 'a:2:{s:8:\"advanced\";a:1:{s:14:\"excluded_users\";a:0:{}}s:4:\"core\";a:11:{s:11:\"all_updates\";s:3:\"off\";s:15:\"version_control\";s:3:\"off\";s:12:\"core_updates\";s:2:\"on\";s:14:\"plugin_updates\";s:2:\"on\";s:13:\"theme_updates\";s:2:\"on\";s:19:\"translation_updates\";s:2:\"on\";s:29:\"automatic_development_updates\";s:3:\"off\";s:31:\"notification_core_update_emails\";s:2:\"on\";s:4:\"logs\";s:2:\"on\";s:15:\"email_addresses\";a:0:{}s:11:\"ratings_nag\";s:2:\"on\";}}', 'yes'),
 (389, 'mpsum_log_table_version', '1.1.4', 'yes'),
-(814, '_site_transient_timeout_php_check_a4e7a3af7060c530d791075f6e3eb5fa', '1632251691', 'no'),
-(815, '_site_transient_php_check_a4e7a3af7060c530d791075f6e3eb5fa', 'a:5:{s:19:\"recommended_version\";s:3:\"7.4\";s:15:\"minimum_version\";s:6:\"5.6.20\";s:12:\"is_supported\";b:0;s:9:\"is_secure\";b:1;s:13:\"is_acceptable\";b:1;}', 'no'),
-(816, '_site_transient_timeout_mpsum_version_numbers', '1631668932', 'no'),
-(817, '_site_transient_mpsum_version_numbers', 'a:1:{s:7:\"user_id\";i:1;}', 'no'),
-(818, '_site_transient_timeout_browser_c7e7172c7781b034963ef5178f1479dd', '1632252133', 'no'),
-(819, '_site_transient_browser_c7e7172c7781b034963ef5178f1479dd', 'a:10:{s:4:\"name\";s:6:\"Chrome\";s:7:\"version\";s:12:\"93.0.4577.63\";s:8:\"platform\";s:7:\"Windows\";s:10:\"update_url\";s:29:\"https://www.google.com/chrome\";s:7:\"img_src\";s:43:\"http://s.w.org/images/browsers/chrome.png?1\";s:11:\"img_src_ssl\";s:44:\"https://s.w.org/images/browsers/chrome.png?1\";s:15:\"current_version\";s:2:\"18\";s:7:\"upgrade\";b:0;s:8:\"insecure\";b:0;s:6:\"mobile\";b:0;}', 'no'),
-(820, '_site_transient_timeout_community-events-d41d8cd98f00b204e9800998ecf8427e', '1631692270', 'no'),
-(821, '_site_transient_community-events-d41d8cd98f00b204e9800998ecf8427e', 'a:4:{s:9:\"sandboxed\";b:0;s:5:\"error\";N;s:8:\"location\";a:1:{s:2:\"ip\";b:0;}s:6:\"events\";a:2:{i:0;a:10:{s:4:\"type\";s:6:\"meetup\";s:5:\"title\";s:60:\"Watch Party + Discussion Group: Intro to the Block Directory\";s:3:\"url\";s:68:\"https://www.meetup.com/learn-wordpress-discussions/events/280148491/\";s:6:\"meetup\";s:27:\"Learn WordPress Discussions\";s:10:\"meetup_url\";s:51:\"https://www.meetup.com/learn-wordpress-discussions/\";s:4:\"date\";s:19:\"2021-09-14 06:00:00\";s:8:\"end_date\";s:19:\"2021-09-14 07:00:00\";s:20:\"start_unix_timestamp\";i:1631624400;s:18:\"end_unix_timestamp\";i:1631628000;s:8:\"location\";a:4:{s:8:\"location\";s:6:\"Online\";s:7:\"country\";s:2:\"US\";s:8:\"latitude\";d:37.779998779297003;s:9:\"longitude\";d:-122.41999816895;}}i:1;a:10:{s:4:\"type\";s:6:\"meetup\";s:5:\"title\";s:38:\"WPCuritiba 74: WP Translation Day 2021\";s:3:\"url\";s:51:\"https://www.meetup.com/wpcuritiba/events/280735189/\";s:6:\"meetup\";s:29:\"Comunidade WordPress Curitiba\";s:10:\"meetup_url\";s:34:\"https://www.meetup.com/wpcuritiba/\";s:4:\"date\";s:19:\"2021-09-18 10:30:00\";s:8:\"end_date\";s:19:\"2021-09-18 12:30:00\";s:20:\"start_unix_timestamp\";i:1631971800;s:18:\"end_unix_timestamp\";i:1631979000;s:8:\"location\";a:4:{s:8:\"location\";s:6:\"Online\";s:7:\"country\";s:2:\"BR\";s:8:\"latitude\";d:-25.420000076293999;s:9:\"longitude\";d:-49.290000915527003;}}}}', 'no');
+(850, '_site_transient_timeout_php_check_a4e7a3af7060c530d791075f6e3eb5fa', '1635016382', 'no'),
+(851, '_site_transient_php_check_a4e7a3af7060c530d791075f6e3eb5fa', 'a:5:{s:19:\"recommended_version\";s:3:\"7.4\";s:15:\"minimum_version\";s:6:\"5.6.20\";s:12:\"is_supported\";b:0;s:9:\"is_secure\";b:1;s:13:\"is_acceptable\";b:1;}', 'no'),
+(854, '_site_transient_timeout_mpsum_version_numbers', '1634439775', 'no'),
+(855, '_site_transient_mpsum_version_numbers', 'a:1:{s:7:\"user_id\";i:1;}', 'no'),
+(856, '_site_transient_timeout_browser_080845ddfc9fd28cc64d421dcdca199d', '1635022975', 'no'),
+(857, '_site_transient_browser_080845ddfc9fd28cc64d421dcdca199d', 'a:10:{s:4:\"name\";s:6:\"Chrome\";s:7:\"version\";s:12:\"94.0.4606.81\";s:8:\"platform\";s:7:\"Windows\";s:10:\"update_url\";s:29:\"https://www.google.com/chrome\";s:7:\"img_src\";s:43:\"http://s.w.org/images/browsers/chrome.png?1\";s:11:\"img_src_ssl\";s:44:\"https://s.w.org/images/browsers/chrome.png?1\";s:15:\"current_version\";s:2:\"18\";s:7:\"upgrade\";b:0;s:8:\"insecure\";b:0;s:6:\"mobile\";b:0;}', 'no'),
+(858, '_site_transient_timeout_community-events-d41d8cd98f00b204e9800998ecf8427e', '1634461377', 'no'),
+(859, '_site_transient_community-events-d41d8cd98f00b204e9800998ecf8427e', 'a:4:{s:9:\"sandboxed\";b:0;s:5:\"error\";N;s:8:\"location\";a:1:{s:2:\"ip\";b:0;}s:6:\"events\";a:4:{i:0;a:10:{s:4:\"type\";s:6:\"meetup\";s:5:\"title\";s:59:\"Cómo empezar a programar bloques para Gutenberg desde cero\";s:3:\"url\";s:68:\"https://www.meetup.com/learn-wordpress-discussions/events/281204409/\";s:6:\"meetup\";s:27:\"Learn WordPress Discussions\";s:10:\"meetup_url\";s:51:\"https://www.meetup.com/learn-wordpress-discussions/\";s:4:\"date\";s:19:\"2021-10-18 05:00:00\";s:8:\"end_date\";s:19:\"2021-10-18 06:30:00\";s:20:\"start_unix_timestamp\";i:1634558400;s:18:\"end_unix_timestamp\";i:1634563800;s:8:\"location\";a:4:{s:8:\"location\";s:6:\"Online\";s:7:\"country\";s:2:\"US\";s:8:\"latitude\";d:37.779998779297003;s:9:\"longitude\";d:-122.41999816895;}}i:1;a:10:{s:4:\"type\";s:8:\"wordcamp\";s:5:\"title\";s:27:\"WordCamp Italia Online 2021\";s:3:\"url\";s:33:\"https://italia.wordcamp.org/2021/\";s:6:\"meetup\";N;s:10:\"meetup_url\";N;s:4:\"date\";s:19:\"2021-10-22 14:00:00\";s:8:\"end_date\";s:19:\"2021-10-23 00:00:00\";s:20:\"start_unix_timestamp\";i:1634904000;s:18:\"end_unix_timestamp\";i:1634940000;s:8:\"location\";a:4:{s:8:\"location\";s:6:\"Online\";s:7:\"country\";s:2:\"IT\";s:8:\"latitude\";d:41.872555300000002;s:9:\"longitude\";d:12.516448;}}i:2;a:10:{s:4:\"type\";s:6:\"meetup\";s:5:\"title\";s:69:\"WPCuritiba 75: O que fazer após a publicação de um site WordPress?\";s:3:\"url\";s:51:\"https://www.meetup.com/wpcuritiba/events/281400758/\";s:6:\"meetup\";s:29:\"Comunidade WordPress Curitiba\";s:10:\"meetup_url\";s:34:\"https://www.meetup.com/wpcuritiba/\";s:4:\"date\";s:19:\"2021-10-28 19:00:00\";s:8:\"end_date\";s:19:\"2021-10-28 20:00:00\";s:20:\"start_unix_timestamp\";i:1635458400;s:18:\"end_unix_timestamp\";i:1635462000;s:8:\"location\";a:4:{s:8:\"location\";s:6:\"Online\";s:7:\"country\";s:2:\"BR\";s:8:\"latitude\";d:-25.420000076293999;s:9:\"longitude\";d:-49.290000915527003;}}i:3;a:10:{s:4:\"type\";s:8:\"wordcamp\";s:5:\"title\";s:31:\"WordCamp São Paulo Online 2021\";s:3:\"url\";s:35:\"https://saopaulo.wordcamp.org/2021/\";s:6:\"meetup\";N;s:10:\"meetup_url\";N;s:4:\"date\";s:19:\"2021-11-27 00:00:00\";s:8:\"end_date\";s:19:\"2021-11-27 00:00:00\";s:20:\"start_unix_timestamp\";i:1637982000;s:18:\"end_unix_timestamp\";i:1637982000;s:8:\"location\";a:4:{s:8:\"location\";s:6:\"Online\";s:7:\"country\";s:2:\"BR\";s:8:\"latitude\";d:-23.555771400000001;s:9:\"longitude\";d:-46.639557099999998;}}}}', 'no');
 
 -- --------------------------------------------------------
 
@@ -4917,7 +4917,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (6458, 232, 'video_destaque', '111'),
 (6459, 232, '_video_destaque', 'field_609da46cef7de'),
 (6466, 233, '_edit_last', '1'),
-(6467, 233, '_edit_lock', '1625949192:1'),
+(6467, 233, '_edit_lock', '1634418050:1'),
 (6468, 233, '_wp_page_template', 'templates/apresentacao.php'),
 (6469, 233, 'video_banner', '180'),
 (6470, 233, '_video_banner', 'field_608f16d40d945'),
@@ -5176,7 +5176,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (6847, 234, 'video_destaque', '111'),
 (6848, 234, '_video_destaque', 'field_609da46cef7de'),
 (6849, 235, '_edit_last', '1'),
-(6850, 235, '_edit_lock', '1628638033:1'),
+(6850, 235, '_edit_lock', '1634418166:1'),
 (6851, 235, '_wp_page_template', 'templates/apresentacao.php'),
 (6852, 235, 'video_banner', '322'),
 (6853, 235, '_video_banner', 'field_608f16d40d945'),
@@ -5266,7 +5266,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (6937, 235, '_destaques_9_arquivo', 'field_6091c70c306ad'),
 (6962, 235, 'videos', ''),
 (6963, 235, '_videos', 'field_6091d009dc776'),
-(6976, 235, 'video_vimeo', 'https://player.vimeo.com/video/582600090'),
+(6976, 235, 'video_vimeo', 'https://player.vimeo.com/video/631063568'),
 (6977, 235, '_video_vimeo', 'field_6095dbba8947b'),
 (6978, 235, 'video_destaque', ''),
 (6979, 235, '_video_destaque', 'field_609da46cef7de'),
@@ -9342,7 +9342,99 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (11237, 372, 'cases_terceira_sessao', '2'),
 (11238, 372, '_cases_terceira_sessao', 'field_608da5618b6b0'),
 (11239, 372, 'titulo_segunda_sessao', 'INTEGRAR PRODUTO,\r\nPONTO DE VENDA E\r\nCOMUNICAÇÃO.'),
-(11240, 372, '_titulo_segunda_sessao', 'field_6089e2052474d');
+(11240, 372, '_titulo_segunda_sessao', 'field_6089e2052474d'),
+(11241, 374, 'video_banner', '322'),
+(11242, 374, '_video_banner', 'field_608f16d40d945'),
+(11243, 374, 'titulo_banner', 'produto.'),
+(11244, 374, '_titulo_banner', 'field_608f16ed0d946'),
+(11245, 374, 'destaques_0_coluna_0_imagem', '93'),
+(11246, 374, '_destaques_0_coluna_0_imagem', 'field_609099e3618fd'),
+(11247, 374, 'destaques_0_coluna_1_imagem', '94'),
+(11248, 374, '_destaques_0_coluna_1_imagem', 'field_609099e3618fd'),
+(11249, 374, 'destaques_0_coluna_2_imagem', '95'),
+(11250, 374, '_destaques_0_coluna_2_imagem', 'field_609099e3618fd'),
+(11251, 374, 'destaques_0_coluna', '3'),
+(11252, 374, '_destaques_0_coluna', 'field_609099be618fc'),
+(11253, 374, 'destaques_1_coluna_0_imagem', '96'),
+(11254, 374, '_destaques_1_coluna_0_imagem', 'field_609099e3618fd'),
+(11255, 374, 'destaques_1_coluna', '1'),
+(11256, 374, '_destaques_1_coluna', 'field_609099be618fc'),
+(11257, 374, 'destaques', '10'),
+(11258, 374, '_destaques', 'field_609099b5618fb'),
+(11259, 374, 'destaques_2_coluna_0_imagem', '95'),
+(11260, 374, '_destaques_2_coluna_0_imagem', 'field_609099e3618fd'),
+(11261, 374, 'destaques_2_coluna_1_imagem', '94'),
+(11262, 374, '_destaques_2_coluna_1_imagem', 'field_609099e3618fd'),
+(11263, 374, 'destaques_2_coluna_2_imagem', '93'),
+(11264, 374, '_destaques_2_coluna_2_imagem', 'field_609099e3618fd'),
+(11265, 374, 'destaques_2_coluna', '3'),
+(11266, 374, '_destaques_2_coluna', 'field_609099be618fc'),
+(11267, 374, 'destaques_3_coluna_0_imagem', '96'),
+(11268, 374, '_destaques_3_coluna_0_imagem', 'field_609099e3618fd'),
+(11269, 374, 'destaques_3_coluna_1_imagem', '94'),
+(11270, 374, '_destaques_3_coluna_1_imagem', 'field_609099e3618fd'),
+(11271, 374, 'destaques_3_coluna', '2'),
+(11272, 374, '_destaques_3_coluna', 'field_609099be618fc'),
+(11273, 374, 'destaques_4_coluna_0_imagem', '95'),
+(11274, 374, '_destaques_4_coluna_0_imagem', 'field_609099e3618fd'),
+(11275, 374, 'destaques_4_coluna_1_imagem', '93'),
+(11276, 374, '_destaques_4_coluna_1_imagem', 'field_609099e3618fd'),
+(11277, 374, 'destaques_4_coluna_2_imagem', '94'),
+(11278, 374, '_destaques_4_coluna_2_imagem', 'field_609099e3618fd'),
+(11279, 374, 'destaques_4_coluna', '3'),
+(11280, 374, '_destaques_4_coluna', 'field_609099be618fc'),
+(11281, 374, 'destaques_5_coluna_0_imagem', '93'),
+(11282, 374, '_destaques_5_coluna_0_imagem', 'field_609099e3618fd'),
+(11283, 374, 'destaques_5_coluna_1_imagem', '96'),
+(11284, 374, '_destaques_5_coluna_1_imagem', 'field_609099e3618fd'),
+(11285, 374, 'destaques_5_coluna', '2'),
+(11286, 374, '_destaques_5_coluna', 'field_609099be618fc'),
+(11287, 374, 'destaques_6_coluna_0_imagem', '95'),
+(11288, 374, '_destaques_6_coluna_0_imagem', 'field_609099e3618fd'),
+(11289, 374, 'destaques_6_coluna_1_imagem', '94'),
+(11290, 374, '_destaques_6_coluna_1_imagem', 'field_609099e3618fd'),
+(11291, 374, 'destaques_6_coluna_2_imagem', '93'),
+(11292, 374, '_destaques_6_coluna_2_imagem', 'field_609099e3618fd'),
+(11293, 374, 'destaques_6_coluna', '3'),
+(11294, 374, '_destaques_6_coluna', 'field_609099be618fc'),
+(11295, 374, 'destaques_7_coluna_0_imagem', '96'),
+(11296, 374, '_destaques_7_coluna_0_imagem', 'field_609099e3618fd'),
+(11297, 374, 'destaques_7_coluna', '1'),
+(11298, 374, '_destaques_7_coluna', 'field_609099be618fc'),
+(11299, 374, 'destaques_8_coluna_0_imagem', '95'),
+(11300, 374, '_destaques_8_coluna_0_imagem', 'field_609099e3618fd'),
+(11301, 374, 'destaques_8_coluna_1_imagem', '94'),
+(11302, 374, '_destaques_8_coluna_1_imagem', 'field_609099e3618fd'),
+(11303, 374, 'destaques_8_coluna_2_imagem', '93'),
+(11304, 374, '_destaques_8_coluna_2_imagem', 'field_609099e3618fd'),
+(11305, 374, 'destaques_8_coluna', '3'),
+(11306, 374, '_destaques_8_coluna', 'field_609099be618fc'),
+(11307, 374, 'destaques_0_arquivo', '296'),
+(11308, 374, '_destaques_0_arquivo', 'field_6091c70c306ad'),
+(11309, 374, 'destaques_1_arquivo', '297'),
+(11310, 374, '_destaques_1_arquivo', 'field_6091c70c306ad'),
+(11311, 374, 'destaques_2_arquivo', '298'),
+(11312, 374, '_destaques_2_arquivo', 'field_6091c70c306ad'),
+(11313, 374, 'destaques_3_arquivo', '299'),
+(11314, 374, '_destaques_3_arquivo', 'field_6091c70c306ad'),
+(11315, 374, 'destaques_4_arquivo', '290'),
+(11316, 374, '_destaques_4_arquivo', 'field_6091c70c306ad'),
+(11317, 374, 'destaques_5_arquivo', '291'),
+(11318, 374, '_destaques_5_arquivo', 'field_6091c70c306ad'),
+(11319, 374, 'destaques_6_arquivo', '292'),
+(11320, 374, '_destaques_6_arquivo', 'field_6091c70c306ad'),
+(11321, 374, 'destaques_7_arquivo', '293'),
+(11322, 374, '_destaques_7_arquivo', 'field_6091c70c306ad'),
+(11323, 374, 'destaques_8_arquivo', '294'),
+(11324, 374, '_destaques_8_arquivo', 'field_6091c70c306ad'),
+(11325, 374, 'destaques_9_arquivo', '295'),
+(11326, 374, '_destaques_9_arquivo', 'field_6091c70c306ad'),
+(11327, 374, 'videos', ''),
+(11328, 374, '_videos', 'field_6091d009dc776'),
+(11329, 374, 'video_vimeo', 'https://player.vimeo.com/video/631063568'),
+(11330, 374, '_video_vimeo', 'field_6095dbba8947b'),
+(11331, 374, 'video_destaque', ''),
+(11332, 374, '_video_destaque', 'field_609da46cef7de');
 
 -- --------------------------------------------------------
 
@@ -9526,7 +9618,7 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (232, 1, '2021-05-18 18:17:49', '2021-05-18 21:17:49', '', 'Comunicação', '', 'inherit', 'closed', 'closed', '', '83-revision-v1', '', '', '2021-05-18 18:17:49', '2021-05-18 21:17:49', '', 83, 'http://localhost/workers/?p=232', 0, 'revision', '', 0),
 (233, 1, '2021-05-18 18:25:44', '2021-05-18 21:25:44', '', 'Ponto de venda', '', 'draft', 'closed', 'closed', '', 'ponto-de-venda', '', '', '2021-07-10 17:35:30', '2021-07-10 20:35:30', '', 0, 'http://localhost/workers/?page_id=233', 0, 'page', '', 0),
 (234, 1, '2021-05-18 18:25:44', '2021-05-18 21:25:44', '', 'Ponto de venda', '', 'inherit', 'closed', 'closed', '', '233-revision-v1', '', '', '2021-05-18 18:25:44', '2021-05-18 21:25:44', '', 233, 'http://localhost/workers/?p=234', 0, 'revision', '', 0),
-(235, 1, '2021-05-18 18:26:24', '2021-05-18 21:26:24', '', 'Produto', '', 'publish', 'closed', 'closed', '', 'produto', '', '', '2021-08-10 20:27:59', '2021-08-10 23:27:59', '', 0, 'http://localhost/workers/?page_id=235', 0, 'page', '', 0),
+(235, 1, '2021-05-18 18:26:24', '2021-05-18 21:26:24', '', 'Produto', '', 'publish', 'closed', 'closed', '', 'produto', '', '', '2021-10-16 18:03:43', '2021-10-16 21:03:43', '', 0, 'http://localhost/workers/?page_id=235', 0, 'page', '', 0),
 (236, 1, '2021-05-18 18:26:24', '2021-05-18 21:26:24', '', 'Produto', '', 'inherit', 'closed', 'closed', '', '235-revision-v1', '', '', '2021-05-18 18:26:24', '2021-05-18 21:26:24', '', 235, 'http://localhost/workers/?p=236', 0, 'revision', '', 0),
 (238, 1, '2021-07-10 17:34:55', '2021-05-18 21:26:47', ' ', '', '', 'publish', 'closed', 'closed', '', '238', '', '', '2021-07-10 17:34:55', '2021-07-10 20:34:55', '', 0, 'http://localhost/workers/?p=238', 4, 'nav_menu_item', '', 0),
 (240, 1, '2021-07-10 17:34:54', '2021-06-01 17:26:39', ' ', '', '', 'publish', 'closed', 'closed', '', '240', '', '', '2021-07-10 17:34:54', '2021-07-10 20:34:54', '', 0, 'http://localhost/workers/?p=240', 2, 'nav_menu_item', '', 0),
@@ -9625,11 +9717,13 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (364, 1, '2021-08-10 20:30:45', '2021-08-10 23:30:45', '', 'Home', '', 'inherit', 'closed', 'closed', '', '8-revision-v1', '', '', '2021-08-10 20:30:45', '2021-08-10 23:30:45', '', 8, 'http://localhost/workers/?p=364', 0, 'revision', '', 0),
 (365, 1, '2021-08-12 20:39:43', '2021-08-12 23:39:43', '', 'planejamento', '', 'inherit', 'open', 'closed', '', 'planejamento', '', '', '2021-08-12 20:39:43', '2021-08-12 23:39:43', '', 136, 'http://localhost/workers/wp-content/uploads/2021/08/planejamento.mp4', 0, 'attachment', 'video/mp4', 0),
 (366, 1, '2021-08-12 20:39:56', '2021-08-12 23:39:56', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', 'A Workers', '', 'inherit', 'closed', 'closed', '', '136-revision-v1', '', '', '2021-08-12 20:39:56', '2021-08-12 23:39:56', '', 136, 'http://localhost/workers/?p=366', 0, 'revision', '', 0),
-(368, 1, '2021-09-14 16:22:13', '0000-00-00 00:00:00', '', 'Rascunho automático', '', 'auto-draft', 'open', 'open', '', '', '', '', '2021-09-14 16:22:13', '0000-00-00 00:00:00', '', 0, 'http://localhost/workers/?p=368', 0, 'post', '', 0),
 (369, 1, '2021-09-14 16:31:50', '2021-09-14 19:31:50', '', 'Home', '', 'inherit', 'closed', 'closed', '', '8-revision-v1', '', '', '2021-09-14 16:31:50', '2021-09-14 19:31:50', '', 8, 'http://localhost/workers/?p=369', 0, 'revision', '', 0),
 (370, 1, '2021-09-14 16:33:37', '2021-09-14 19:33:37', '', 'Home', '', 'inherit', 'closed', 'closed', '', '8-revision-v1', '', '', '2021-09-14 16:33:37', '2021-09-14 19:33:37', '', 8, 'http://localhost/workers/?p=370', 0, 'revision', '', 0),
 (371, 1, '2021-09-14 16:51:38', '2021-09-14 19:51:38', '', 'CAPA-WeAreWorkers-2021-02', '', 'inherit', 'open', 'closed', '', 'capa-weareworkers-2021-02', '', '', '2021-09-14 16:51:38', '2021-09-14 19:51:38', '', 8, 'http://localhost/workers/wp-content/uploads/2021/09/CAPA-WeAreWorkers-2021-02.mp4', 0, 'attachment', 'video/mp4', 0),
-(372, 1, '2021-09-14 16:51:58', '2021-09-14 19:51:58', '', 'Home', '', 'inherit', 'closed', 'closed', '', '8-revision-v1', '', '', '2021-09-14 16:51:58', '2021-09-14 19:51:58', '', 8, 'http://localhost/workers/?p=372', 0, 'revision', '', 0);
+(372, 1, '2021-09-14 16:51:58', '2021-09-14 19:51:58', '', 'Home', '', 'inherit', 'closed', 'closed', '', '8-revision-v1', '', '', '2021-09-14 16:51:58', '2021-09-14 19:51:58', '', 8, 'http://localhost/workers/?p=372', 0, 'revision', '', 0),
+(373, 1, '2021-10-16 18:02:56', '0000-00-00 00:00:00', '', 'Rascunho automático', '', 'auto-draft', 'open', 'open', '', '', '', '', '2021-10-16 18:02:56', '0000-00-00 00:00:00', '', 0, 'http://localhost/workers/?p=373', 0, 'post', '', 0);
+INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
+(374, 1, '2021-10-16 18:03:43', '2021-10-16 21:03:43', '', 'Produto', '', 'inherit', 'closed', 'closed', '', '235-revision-v1', '', '', '2021-10-16 18:03:43', '2021-10-16 21:03:43', '', 235, 'http://localhost/workers/?p=374', 0, 'revision', '', 0);
 
 -- --------------------------------------------------------
 
@@ -9743,7 +9837,7 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (13, 1, 'wp_user_level', '10'),
 (14, 1, 'dismissed_wp_pointers', ''),
 (15, 1, 'show_welcome_panel', '0'),
-(17, 1, 'wp_dashboard_quick_press_last_post_id', '368'),
+(17, 1, 'wp_dashboard_quick_press_last_post_id', '373'),
 (18, 1, 'meta-box-order_dashboard', 'a:4:{s:6:\"normal\";s:40:\"dashboard_site_health,dashboard_activity\";s:4:\"side\";s:39:\"dashboard_primary,dashboard_quick_press\";s:7:\"column3\";s:19:\"dashboard_right_now\";s:7:\"column4\";s:0:\"\";}'),
 (19, 1, 'closedpostboxes_dashboard', 'a:6:{i:0;s:21:\"dashboard_site_health\";i:1;s:18:\"dashboard_activity\";i:2;s:18:\"rg_forms_dashboard\";i:3;s:17:\"dashboard_primary\";i:4;s:21:\"dashboard_quick_press\";i:5;s:19:\"dashboard_right_now\";}'),
 (20, 1, 'metaboxhidden_dashboard', 'a:0:{}'),
@@ -9756,7 +9850,7 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (27, 1, 'nav_menu_recently_edited', '2'),
 (28, 1, 'closedpostboxes_acf-field-group', 'a:0:{}'),
 (29, 1, 'metaboxhidden_acf-field-group', 'a:1:{i:0;s:7:\"slugdiv\";}'),
-(30, 1, 'session_tokens', 'a:1:{s:64:\"670d595f9b1a8f12807cd3d04969c227a8ab9669e9067037519347a26d2d70e0\";a:4:{s:10:\"expiration\";i:1631820129;s:2:\"ip\";s:3:\"::1\";s:2:\"ua\";s:114:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36\";s:5:\"login\";i:1631647329;}}');
+(30, 1, 'session_tokens', 'a:1:{s:64:\"3bfdbf488885d0cfe6797b7d03c06a3d9d83119e4e2b9440129af752db5ffe87\";a:4:{s:10:\"expiration\";i:1634590972;s:2:\"ip\";s:3:\"::1\";s:2:\"ua\";s:114:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36\";s:5:\"login\";i:1634418172;}}');
 
 -- --------------------------------------------------------
 
@@ -10008,19 +10102,19 @@ ALTER TABLE `wp_links`
 -- AUTO_INCREMENT de tabela `wp_options`
 --
 ALTER TABLE `wp_options`
-  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=849;
+  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=866;
 
 --
 -- AUTO_INCREMENT de tabela `wp_postmeta`
 --
 ALTER TABLE `wp_postmeta`
-  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11241;
+  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11333;
 
 --
 -- AUTO_INCREMENT de tabela `wp_posts`
 --
 ALTER TABLE `wp_posts`
-  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=373;
+  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=375;
 
 --
 -- AUTO_INCREMENT de tabela `wp_termmeta`

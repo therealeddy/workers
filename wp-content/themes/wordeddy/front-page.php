@@ -39,7 +39,7 @@
     </div>
   </div>
 
-  <div class="integrar d-flex align-items-center" id="session-two">
+  <div class="integrar" id="session-two">
     <div class="container">
       <h2 class="title-2 white gs_reveal gs_reveal_fromLeft">
       <?php the_field('titulo_segunda _sessao') ?>
@@ -85,11 +85,12 @@
       </h2>
 
       <?php if( have_rows('cases_terceira_sessao') ): ?>
-        <div class="d-flex area-imagens">
+        <div class="area-imagens">
           <?php $cont = 0; while( have_rows('cases_terceira_sessao') ): the_row(); ?>
+            <p class="<?php echo $cont === 0 ? 'title-image-left' : 'title-image-right'; ?>"><?php the_sub_field('titulo'); ?></p>
 
             <?php if(get_sub_field('arquivo_animado')['type'] === 'video'): ?>
-              <button type="button" class="img-back video gs_reveal <?php echo $cont === 0 ? 'gs_reveal_fromBottom' : 'gs_reveal_fromTop'?>" data-toggle="modal" data-target="#modal-case-<?php echo $cont ?>">
+              <button type="button" class="img-back video gs_reveal gs_reveal_fromBottom" data-toggle="modal" data-target="#modal-case-<?php echo $cont ?>">
                 <div class="hover-play"></div>
                 <video autoplay muted loop>
                   <source src="<?php echo get_sub_field('arquivo_animado')['url']; ?>" type="video/mp4">
@@ -97,12 +98,11 @@
               </button>
             <?php endif; ?>
             <?php if(get_sub_field('arquivo_animado')['type'] === 'image'): ?>
-              <button type="button" class="img-back gs_reveal <?php echo $cont === 0 ? 'gs_reveal_fromBottom' : 'gs_reveal_fromTop'?>" style="background-image: url(<?php echo get_sub_field('arquivo_animado')['url']; ?>)" data-toggle="modal" data-target="#modal-case-<?php echo $cont ?>">
+              <button type="button" class="img-back gs_reveal gs_reveal_fromBottom" style="background-image: url(<?php echo get_sub_field('arquivo_animado')['url']; ?>)" data-toggle="modal" data-target="#modal-case-<?php echo $cont ?>">
                 <div class="hover-play"></div>
               </button>
             <?php endif; ?>
 
-            <p class="<?php echo $cont === 0 ? 'title-image-left' : 'title-image-right'; ?>"><?php the_sub_field('titulo'); ?></p>
           <?php $cont++; endwhile; ?>
         </div>
       <?php endif; ?>

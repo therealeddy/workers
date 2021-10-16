@@ -60,10 +60,15 @@ a, button {
 .title-2 {
   font-family: "Poppins", sans-serif;
   font-weight: 200;
-  font-size: 3.75rem;
   color: #000000;
   display: block;
   margin-bottom: 80px;
+  font-size: 1.875rem;
+}
+@media (min-width: 992px) {
+  .title-2 {
+    font-size: 3.75rem;
+  }
 }
 .title-2.white {
   color: #ffffff;
@@ -72,9 +77,14 @@ a, button {
 .title-3 {
   font-family: "Poppins", sans-serif;
   font-weight: 200;
-  font-size: 2.5rem;
   color: #000000;
   display: block;
+  font-size: 1.5625rem;
+}
+@media (min-width: 992px) {
+  .title-3 {
+    font-size: 2.5rem;
+  }
 }
 .title-3.white {
   color: #ffffff;
@@ -129,7 +139,12 @@ a, button {
 .modal-video .modal-content .modal-body iframe, .modal-video .modal-content .modal-body video {
   width: 100%;
   border: 1px solid transparent;
-  height: 565px;
+  height: 265px;
+}
+@media (min-width: 992px) {
+  .modal-video .modal-content .modal-body iframe, .modal-video .modal-content .modal-body video {
+    height: 565px;
+  }
 }
 
 .header-black {
@@ -188,7 +203,7 @@ a, button {
   left: 0;
   width: 100%;
   padding-top: 50px;
-  z-index: 10;
+  z-index: 1000;
 }
 .main-header img.logotipo {
   width: 110px;
@@ -240,11 +255,17 @@ a, button {
   background: #000000;
   padding: 50px;
   height: 100vh;
-  min-width: 500px;
   position: absolute;
-  right: -500px;
+  right: -100%;
   top: 0;
   transition: all 0.3s ease;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .main-header .menu-open-modal .menu-open {
+    width: 500px;
+    right: -500px;
+  }
 }
 .main-header .menu-open-modal .menu-open .btn-close {
   background: transparent;
@@ -294,18 +315,28 @@ a, button {
   padding-left: 20px;
 }
 .main-header #menu-header li {
-  margin-bottom: 40px;
   padding-left: 15px;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .main-header #menu-header li {
+    margin-bottom: 40px;
+  }
 }
 .main-header #menu-header li::marker {
   color: #ffffff;
 }
 .main-header #menu-header li a {
   font-family: "Poppins", sans-serif;
-  font-size: 1.875rem;
+  font-size: 1.125rem;
   color: #ffffff;
   text-decoration: none;
   transition: all 0.2s linear;
+}
+@media (min-width: 768px) {
+  .main-header #menu-header li a {
+    font-size: 1.875rem;
+  }
 }
 .main-header #menu-header li a:hover {
   opacity: 0.5;
@@ -333,6 +364,7 @@ a, button {
   border: 0px solid;
   box-shadow: 50vw 0 200px 0 rgba(0, 0, 0, 0.5) inset;
   cursor: url(../../images/btn-play-white.png), auto !important;
+  overflow: hidden;
 }
 .front-page .area-banner .banner-home video {
   position: absolute;
@@ -346,21 +378,43 @@ a, button {
 .front-page .area-banner .banner-home h1, .front-page .area-banner .banner-home h1 * {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  font-size: 5.3125rem;
+  font-size: 1.875rem;
   color: #ffffff;
   text-align: left;
+}
+@media (min-width: 992px) {
+  .front-page .area-banner .banner-home h1, .front-page .area-banner .banner-home h1 * {
+    font-size: 5.3125rem;
+  }
 }
 .front-page .integrar {
   min-height: 720px;
   background: #2c2e3a;
-  position: relative;
+  padding: 50px 0;
+}
+@media (min-width: 992px) {
+  .front-page .integrar {
+    padding: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
 }
 .front-page .integrar .produtos {
   width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: -280px;
   z-index: 10;
+}
+@media (min-width: 992px) {
+  .front-page .integrar .produtos {
+    left: 0;
+    bottom: -250px;
+    position: absolute;
+  }
+}
+@media (min-width: 1200px) {
+  .front-page .integrar .produtos {
+    bottom: -280px;
+  }
 }
 .front-page .integrar .produtos .title-item {
   display: flex;
@@ -386,6 +440,12 @@ a, button {
   text-decoration: none;
   transition: all 0.3s linear;
   display: block;
+  margin-bottom: 40px;
+}
+@media (min-width: 992px) {
+  .front-page .integrar .produtos a {
+    margin-bottom: 0;
+  }
 }
 .front-page .integrar .produtos a .hover-play {
   opacity: 0;
@@ -415,8 +475,13 @@ a, button {
 }
 .front-page .integrar .produtos a.link-video {
   overflow: hidden;
-  height: 340px;
   position: relative;
+  height: 280px;
+}
+@media (min-width: 1200px) {
+  .front-page .integrar .produtos a.link-video {
+    height: 340px;
+  }
 }
 .front-page .integrar .produtos a.link-video video {
   width: 100%;
@@ -434,40 +499,68 @@ a, button {
   background-size: cover;
 }
 .front-page .contruir-marcas {
-  padding-top: 400px;
+  padding-top: 50px;
+}
+@media (min-width: 992px) {
+  .front-page .contruir-marcas {
+    padding-top: 400px;
+  }
 }
 .front-page .contruir-marcas .area-imagens {
   position: relative;
   z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 992px) {
+  .front-page .contruir-marcas .area-imagens {
+    flex-direction: row;
+  }
 }
 .front-page .contruir-marcas .area-imagens .title-image-left, .front-page .contruir-marcas .area-imagens .title-image-right {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
 }
-.front-page .contruir-marcas .area-imagens .title-image-left {
-  position: absolute;
-  left: -105px;
-  top: 100px;
-  z-index: 10;
-  transform: rotate(-90deg);
+@media (min-width: 992px) {
+  .front-page .contruir-marcas .area-imagens .title-image-left {
+    position: absolute;
+    left: -105px;
+    top: 100px;
+    z-index: 10;
+    transform: rotate(-90deg);
+  }
 }
-.front-page .contruir-marcas .area-imagens .title-image-right {
-  position: absolute;
-  right: -105px;
-  top: 100px;
-  z-index: 10;
-  transform: rotate(90deg);
+@media (min-width: 992px) {
+  .front-page .contruir-marcas .area-imagens .title-image-right {
+    position: absolute;
+    right: -105px;
+    top: 100px;
+    z-index: 10;
+    transform: rotate(90deg);
+  }
 }
 .front-page .contruir-marcas .area-imagens button.img-back {
-  width: 50%;
-  height: 650px;
+  width: 100%;
+  height: 400px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border: 0px solid;
   padding: 0;
   position: relative;
+  margin-bottom: 50px;
+}
+@media (min-width: 992px) {
+  .front-page .contruir-marcas .area-imagens button.img-back {
+    height: 540px;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .front-page .contruir-marcas .area-imagens button.img-back {
+    height: 640px;
+  }
 }
 .front-page .contruir-marcas .area-imagens button.img-back:hover .hover-play {
   opacity: 1;
@@ -499,11 +592,11 @@ a, button {
   overflow: hidden;
 }
 .front-page .contruir-marcas .area-imagens button.img-back.video video {
-  height: 100%;
-  transform: translateX(-50%);
+  width: 100%;
+  transform: translate(-50%, -50%);
   position: absolute;
   left: 50%;
-  bottom: 0;
+  top: 50%;
   z-index: 500;
 }
 .front-page .desvendar {
@@ -524,13 +617,28 @@ a, button {
 }
 .front-page .session-five .img-back {
   width: 100%;
-  height: 340px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin-bottom: 30px;
   position: relative;
   display: block;
+  height: 260px;
+}
+@media (min-width: 768px) {
+  .front-page .session-five .img-back {
+    height: 500px;
+  }
+}
+@media (min-width: 992px) {
+  .front-page .session-five .img-back {
+    height: 280px;
+  }
+}
+@media (min-width: 1200px) {
+  .front-page .session-five .img-back {
+    height: 340px;
+  }
 }
 .front-page .session-five .img-back .hover-play {
   opacity: 0;
@@ -563,6 +671,11 @@ a, button {
 }
 .front-page .session-five .img-back.video video {
   width: 100%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 500;
 }
 .front-page .session-five p {
   font-family: "Poppins", sans-serif;
@@ -596,6 +709,7 @@ a, button {
   background: transparent;
   border: 0px solid;
   cursor: url(../../images/btn-play-white.png), auto !important;
+  overflow: hidden;
 }
 .apresentacao .area-banner .banner-apresentacao video {
   position: absolute;
@@ -609,8 +723,13 @@ a, button {
 .apresentacao .area-banner .banner-apresentacao h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  font-size: 5.3125rem;
   color: #ffffff;
+  font-size: 1.875rem;
+}
+@media (min-width: 992px) {
+  .apresentacao .area-banner .banner-apresentacao h1 {
+    font-size: 5.3125rem;
+  }
 }
 .apresentacao .back-blue {
   background: #ffffff;
@@ -639,8 +758,6 @@ a, button {
   top: 50%;
   z-index: 100;
   font-size: 0rem;
-  width: 25px;
-  height: 45px;
   background-color: transparent;
   background-position: center;
   background-repeat: no-repeat;
@@ -649,16 +766,34 @@ a, button {
   border: 0px solid;
   transition: all 0.3s linear;
   animation: flare 1s ease infinite;
+  width: 15px;
+  height: 30px;
+}
+@media (min-width: 992px) {
+  .apresentacao .gallery .slick-arrow {
+    width: 25px;
+    height: 45px;
+  }
 }
 .apresentacao .gallery .slick-arrow:hover {
   opacity: 0.7;
 }
 .apresentacao .gallery .slick-arrow.slick-prev {
-  left: 40px;
+  left: 15px;
   transform: rotate(180deg);
 }
+@media (min-width: 992px) {
+  .apresentacao .gallery .slick-arrow.slick-prev {
+    left: 40px;
+  }
+}
 .apresentacao .gallery .slick-arrow.slick-next {
-  right: 40px;
+  right: 15px;
+}
+@media (min-width: 992px) {
+  .apresentacao .gallery .slick-arrow.slick-next {
+    right: 40px;
+  }
 }
 .apresentacao .gallery ul.slick-dots {
   list-style-type: none;
@@ -668,7 +803,12 @@ a, button {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 50px;
+  bottom: 20px;
+}
+@media (min-width: 992px) {
+  .apresentacao .gallery ul.slick-dots {
+    bottom: 50px;
+  }
 }
 .apresentacao .gallery ul.slick-dots li {
   margin: 0;
@@ -758,50 +898,79 @@ a, button {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 675px;
+  min-height: 675px;
+  padding: 30px 0;
 }
 .empresa .banner .banner-content .title-empresa {
   color: #ffffff;
-  font-size: 1.875rem;
-  line-height: 2.8125rem;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+@media (min-width: 992px) {
+  .empresa .banner .banner-content .title-empresa {
+    margin-bottom: 0;
+    font-size: 1.875rem;
+    line-height: 2.8125rem;
+  }
 }
 .empresa .banner .banner-content img {
   width: 100%;
   position: relative;
   z-index: 100;
-  transform: translateY(110px);
 }
 .empresa .title-opera p {
   color: #5f5f5f;
-  font-size: 10rem;
+  font-size: 6.25rem;
+  line-height: 4.375rem;
   font-family: "Work Sans", sans-serif;
   font-weight: 200;
-  line-height: 6.25rem;
-  margin-bottom: 40px;
+}
+@media (min-width: 992px) {
+  .empresa .title-opera p {
+    margin-bottom: 40px;
+    font-size: 10rem;
+    line-height: 6.25rem;
+  }
 }
 .empresa .title-opera h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  font-size: 1.875rem;
   color: #ffffff;
   padding-left: 10px;
+  font-size: 1.25rem;
+}
+@media (min-width: 992px) {
+  .empresa .title-opera h3 {
+    font-size: 1.875rem;
+  }
 }
 .empresa .planejamento {
   background-color: #202028;
-  height: 900px;
   display: flex;
-  align-items: center;
   justify-content: center;
   position: relative;
+  height: 500px;
+  align-items: flex-end;
+}
+@media (min-width: 992px) {
+  .empresa .planejamento {
+    align-items: center;
+    height: 900px;
+  }
 }
 .empresa .planejamento .container-title {
   position: absolute;
   left: 50%;
-  top: 100px;
+  top: 50px;
   width: 100%;
   transform: translateX(-50%);
+}
+@media (min-width: 992px) {
+  .empresa .planejamento .container-title {
+    top: 100px;
+  }
 }
 .empresa .planejamento video.video-planejamento {
   width: 100%;
@@ -819,7 +988,7 @@ a, button {
 }
 .empresa .operacao {
   background-color: #2c2e3a;
-  padding: 150px 0 250px;
+  padding: 150px 0;
   background-image: url("../../images/bg-balls.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -831,6 +1000,7 @@ a, button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 100px;
 }
 .empresa .operacao .item-single img {
   max-width: 100%;
@@ -870,9 +1040,14 @@ footer .btn-top img {
 footer .email {
   margin-bottom: 40px;
   font-family: "Poppins", sans-serif;
-  font-size: 1.5rem;
   font-weight: 200;
   color: #ffffff;
+  font-size: 1rem;
+}
+@media (min-width: 992px) {
+  footer .email {
+    font-size: 1.5rem;
+  }
 }
 footer .area-whats {
   margin-bottom: 40px;
@@ -901,6 +1076,17 @@ footer .area-whats p.num {
   color: #ffffff;
   margin: 0;
 }
+footer .bottom-footer {
+  display: flex;
+  flex-direction: column-reverse;
+}
+@media (min-width: 992px) {
+  footer .bottom-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
 footer .bottom-footer .redes a {
   background-color: #ffffff;
   font-size: 1.25rem;
@@ -920,10 +1106,17 @@ footer .bottom-footer .redes a:hover {
 }
 footer .bottom-footer .endereco {
   color: #ffffff;
-  text-align: right;
   font-family: "Poppins", sans-serif;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 200;
+  margin-bottom: 30px;
+}
+@media (min-width: 992px) {
+  footer .bottom-footer .endereco {
+    font-size: 1.125rem;
+    text-align: right;
+    margin-bottom: 0;
+  }
 }
 footer .bottom-footer .endereco * {
   margin: 0;

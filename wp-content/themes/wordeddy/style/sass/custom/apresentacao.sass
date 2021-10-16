@@ -21,6 +21,7 @@
       background: transparent
       border: 0px solid
       cursor: url(../../images/btn-play-white.png), auto !important
+      overflow: hidden
       video
         position: absolute
         left: 50%
@@ -32,8 +33,10 @@
       h1
         font-family: 'Poppins', sans-serif
         font-weight: 300
-        font-size: calculateRem(85px)
         color: $white
+        font-size: calculateRem(30px)
+        @media(min-width: 992px)
+          font-size: calculateRem(85px)
   .back-blue
     background: $white
     &.bottom
@@ -55,8 +58,6 @@
       top: 50%
       z-index: 100
       font-size: calculateRem(0px)
-      width: 25px
-      height: 45px
       background-color: transparent
       background-position: center
       background-repeat: no-repeat
@@ -65,13 +66,22 @@
       border: 0px solid
       transition: all 0.3s linear
       animation: flare 1s ease infinite
+      width: 15px
+      height: 30px
+      @media(min-width: 992px)
+        width: 25px
+        height: 45px
       &:hover
         opacity: 0.7
       &.slick-prev
-        left: 40px
+        left: 15px
         transform: rotate(180deg)
+        @media(min-width: 992px)
+          left: 40px
       &.slick-next
-        right: 40px
+        right: 15px
+        @media(min-width: 992px)
+          right: 40px
     ul.slick-dots
       list-style-type: none
       margin: 0
@@ -80,7 +90,9 @@
       position: absolute
       left: 50%
       transform: translateX(-50%)
-      bottom: 50px
+      bottom: 20px
+      @media(min-width: 992px)
+        bottom: 50px
       li
         margin: 0
         padding: 0

@@ -19,9 +19,11 @@ footer
   .email
     margin-bottom: 40px
     font-family: 'Poppins', sans-serif
-    font-size: calculateRem(24px)
     font-weight: 200
     color: $white
+    font-size: calculateRem(16px)
+    @media(min-width: 992px)
+      font-size: calculateRem(24px)
   .area-whats
     margin-bottom: 40px
     .text-whats
@@ -44,6 +46,12 @@ footer
       color: $white
       margin: 0
   .bottom-footer
+    display: flex
+    flex-direction: column-reverse
+    @media(min-width: 992px)
+      display: flex
+      justify-content: space-between
+      flex-direction: row
     .redes
       a
         background-color: $white
@@ -62,10 +70,14 @@ footer
           opacity: 0.7
     .endereco
       color: $white
-      text-align: right
       font-family: 'Poppins', sans-serif
-      font-size: calculateRem(18px)
+      font-size: calculateRem(16px)
       font-weight: 200
+      margin-bottom: 30px
+      @media(min-width: 992px)
+        font-size: calculateRem(18px)
+        text-align: right
+        margin-bottom: 0
       *
         margin: 0
 

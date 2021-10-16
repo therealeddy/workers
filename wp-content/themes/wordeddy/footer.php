@@ -28,7 +28,7 @@
         <p class="num"><?php the_field('whatsapp', 'options') ?></p>
       </div>
     <?php endif; ?>
-    <div class="bottom-footer d-flex justify-content-between">
+    <div class="bottom-footer">
       <?php if( have_rows('redes_sociais', 'options') ): ?>
         <div class="redes d-flex">
           <?php $cont = 0; while( have_rows('redes_sociais', 'options') ): the_row(); ?>

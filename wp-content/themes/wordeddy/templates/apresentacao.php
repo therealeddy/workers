@@ -7,7 +7,7 @@ get_header(); ?>
 <div class="apresentacao">
   <div class="area-banner">
     <button type="button" class="banner-apresentacao d-flex align-items-center" data-toggle="modal" data-target="#modal-apresentacao">
-      <video autoplay muted loop>
+      <video autoplay muted loop preload playsinline poster="">
         <source src="<?php the_field('video_banner'); ?>" type="video/mp4">
       </video>
       <div class="container d-flex justify-content-center">
@@ -39,7 +39,7 @@ get_header(); ?>
     </div>
 
     <?php if(get_field('video_destaque')['type'] === 'video'): ?>
-      <video autoplay muted loop class="video-destaque">
+      <video class="video-destaque" autoplay muted loop preload playsinline poster="">
         <source src="<?php echo get_field('video_destaque')['url']; ?>" type="video/mp4">
       </video>
     <?php endif; ?>
@@ -52,7 +52,7 @@ get_header(); ?>
         <?php while( have_rows('destaques') ): the_row(); ?>
           <div class="item-gallery">
             <?php if(get_sub_field('arquivo')['type'] === 'video'): ?>
-              <video autoplay muted loop>
+              <video autoplay muted loop preload playsinline poster="">
                 <source src="<?php echo get_sub_field('arquivo')['url']; ?>" type="video/mp4">
               </video>
             <?php endif; ?>

@@ -25,7 +25,10 @@
           <i class="fab fa-whatsapp"></i>
           <p>WhatsApp</p>
         </div>
-        <p class="num"><?php the_field('whatsapp', 'options') ?></p>
+        <div class="d-flex align-items-center">
+          <p class="ddd"><?php the_field('ddd', 'options') ?></p>
+          <p class="num"><?php the_field('whatsapp', 'options') ?></p>
+        </div>
       </div>
     <?php endif; ?>
     <div class="bottom-footer">

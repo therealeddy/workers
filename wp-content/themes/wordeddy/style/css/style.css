@@ -301,8 +301,12 @@ a, button {
   font-size: 1rem;
   color: #ffffff;
 }
-.main-header .menu-open-modal .menu-open .whats-talk .area-number {
-  padding-left: 30px;
+.main-header .menu-open-modal .menu-open .whats-talk .area-number .ddd {
+  margin: 0;
+  margin-right: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+  color: #ffffff;
 }
 .main-header .menu-open-modal .menu-open .whats-talk .area-number .num {
   margin: 0;
@@ -1065,16 +1069,38 @@ footer .area-whats .text-whats p {
   font-weight: 200;
 }
 footer .area-whats .text-whats i {
-  font-size: 3.75rem;
+  font-size: 2.5rem;
   margin-bottom: 10px;
+}
+@media (min-width: 992px) {
+  footer .area-whats .text-whats i {
+    font-size: 3.75rem;
+  }
 }
 footer .area-whats p.num {
   font-family: "Poppins", sans-serif;
-  font-size: 2.25rem;
-  line-height: 2.25rem;
+  font-size: 1.25rem;
   font-weight: 200;
   color: #ffffff;
   margin: 0;
+}
+@media (min-width: 992px) {
+  footer .area-whats p.num {
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+  }
+}
+footer .area-whats .ddd {
+  margin: 0;
+  margin-right: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.75rem;
+  color: #ffffff;
+}
+@media (min-width: 992px) {
+  footer .area-whats .ddd {
+    font-size: 1.125rem;
+  }
 }
 footer .bottom-footer {
   display: flex;

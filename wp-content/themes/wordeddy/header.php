@@ -25,7 +25,10 @@
         <div class="whats-talk">
           <p class="talk">Let's talk.</p>
           <div class="area-number">
-            <p class="num"><?php the_field('whatsapp', 'options') ?></p>
+            <div class="d-flex align-items-center">
+              <p class="ddd"><?php the_field('ddd', 'options') ?></p>
+              <p class="num"><?php the_field('whatsapp', 'options') ?></p>
+            </div>
             <div class="text-whats d-flex align-items-center">
               <p>WhatsApp</p>
               <i class="fab fa-whatsapp"></i>

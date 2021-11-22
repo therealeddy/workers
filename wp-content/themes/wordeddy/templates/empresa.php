@@ -34,7 +34,7 @@ wp_reset_query(); ?>
             <h3><?php the_sub_field('titulo'); ?></h3>
           </div>
         </div>
-        <video autoplay muted loop class="video-planejamento">
+        <video class="video-planejamento" autoplay muted loop preload playsinline poster="">
           <source src="<?php echo get_sub_field('video'); ?>" type="video/mp4">
         </video>
       </div>

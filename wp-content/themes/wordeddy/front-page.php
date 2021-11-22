@@ -4,7 +4,7 @@
 
   <div class="area-banner">
     <button type="button" class="banner-home d-flex align-items-center justify-content-start" data-toggle="modal" data-target="#modal-banner">
-      <video autoplay muted loop>
+      <video autoplay muted loop preload playsinline poster="">
         <source src="<?php the_field('video_banner'); ?>" type="video/mp4">
       </video>
       <div class="container">
@@ -59,7 +59,7 @@
               <?php if(get_sub_field('arquivo_animado')['type'] === 'video'): ?>
                 <a href="<?php echo get_sub_field('link')['url']; ?>" class="link-video">
                   <div class="hover-play"></div>
-                  <video autoplay muted loop>
+                  <video autoplay muted loop preload playsinline poster="">
                     <source src="<?php echo get_sub_field('arquivo_animado')['url']; ?>" type="video/mp4">
                   </video>
                 </a>
@@ -92,7 +92,7 @@
             <?php if(get_sub_field('arquivo_animado')['type'] === 'video'): ?>
               <button type="button" class="img-back video gs_reveal gs_reveal_fromBottom" data-toggle="modal" data-target="#modal-case-<?php echo $cont ?>">
                 <div class="hover-play"></div>
-                <video autoplay muted loop>
+                <video autoplay muted loop preload playsinline poster="">
                   <source src="<?php echo get_sub_field('arquivo_animado')['url']; ?>" type="video/mp4">
                 </video>
               </button>
@@ -137,7 +137,8 @@
   </div>
 
   <div>
-    <div class="session-four" style="background-image: url(<?php the_field('imagem_quinta_sessao') ?>)"></div>
+    <div class="session-four d-none d-lg-block" style="background-image: url(<?php the_field('imagem_quinta_sessao') ?>)"></div>
+    <img src="<?php the_field('imagem_quinta_sessao') ?>" alt="empresa" class="d-block d-lg-none w-100">
   </div>
 
   <?php if( have_rows('topicos_sexta_sessao') ): ?>
@@ -149,7 +150,7 @@
               <div class="col-lg-4 gs_reveal <?php echo $cont % 2 === 0 ? 'gs_reveal_fromTop' : 'gs_reveal_fromBottom'?>">
                 <a href="<?php echo get_sub_field('link'); ?>" class="img-back video">
                   <div class="hover-play"></div>
-                  <video autoplay muted loop>
+                  <video autoplay muted loop preload playsinline poster="">
                     <source src="<?php echo get_sub_field('arquivo_animado')['url']; ?>" type="video/mp4">
                   </video>
                 </a>

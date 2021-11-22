@@ -190,12 +190,15 @@ const loadingWorkers = () => {
 
 	jQuery('a').click(function() {
 		jQuery('.loading-workers').addClass('active');
+
+		setTimeout(() => {
+			jQuery('.loading-workers').removeClass('active');
+		}, 5000)
 	})
 }
 
 jQuery('document').ready(function(){
 	scrollToTop();
-	// galleryAnimationScroll();
 	hideShowAnimationScroll();
 	parallaxAnimationScroll();
 	parallaxBackground();

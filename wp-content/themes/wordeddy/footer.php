@@ -25,10 +25,10 @@
           <i class="fab fa-whatsapp"></i>
           <p>WhatsApp</p>
         </div>
-        <div class="d-flex align-items-center">
+        <a class="d-flex align-items-center" href="https://api.whatsapp.com/send?phone=55<?php the_field('whatsapp_completo', 'options') ?>&text=Ol%C3%A1" target="_blank">
           <p class="ddd"><?php the_field('ddd', 'options') ?></p>
           <p class="num"><?php the_field('whatsapp', 'options') ?></p>
-        </div>
+        </a>
       </div>
     <?php endif; ?>
     <div class="bottom-footer">
